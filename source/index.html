@@ -5,9 +5,9 @@
     <title>HTML Academy: Пинк</title>
   </head>
     <body>
-      <header class="index-header">
-        <div class="index-header__logo">
-          <img src="img/logo-mobile.png" alt="Главная страница Pink">
+      <header class="main-header">
+        <div class="main-header__logo">
+          <img src="img/logo-mobile.png" alt="Логотип приложения Pink">
         </div>
         <nav class="main-menu">
           <ul class="main-menu__list">
@@ -34,57 +34,62 @@
       </header>
 
       <main>
-        <section class="download-app">
-          <h2><a class="download-app__link" href="#">Скачать приложение</a></h2>
-          <ul class="download-app__list">
-            <li class="download-app__item">
-              <a class="download-app__item download-app__item--iphone" href="#">
-                <img src="img/iphone-app-logo.png" alt="Скачать на Iphone">
-              </a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__item download-app__item--android" href="#">
-                <img src="img/android-app-logo.png" alt="Скачать на Android">
-              </a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__item download-app__item--windows" href="#">
-                <img src="img/windows-app-logo.png" alt="Скачать на Windows">
-              </a>
-            </li>
-          </ul>
-          <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <h1 class="visually-hidden">Pink - мобильное приложение для фотографий</h1>
+        <section class="intro intro--index">
+          <div class="download-app">
+            <h2><a class="download-app__link" href="#">Скачать приложение</a></h2><!-- не уверен насчет правильности ссылки в H2 -->
+            <ul class="download-app__list">
+              <li class="download-app__item">
+                <a class="download-app__link-image download-app__link-image--iphone" href="#">
+                  <img src="img/iphone-app-logo.png" alt="Скачать на Iphone">
+                </a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__link-image download-app__link-image--android" href="#">
+                  <img src="img/android-app-logo.png" alt="Скачать на Android">
+                </a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__link-image download-app__link-image--windows" href="#">
+                  <img src="img/windows-app-logo.png" alt="Скачать на Windows">
+                </a>
+              </li>
+            </ul>
+            <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </section>
 
         <section class="features">
           <h2 class="visually-hidden">Преимущества приложения Pink</h2>
           <p class="features__desc">Устали от серости мегаполиса?</p>
           <p class="features__desc">Нам есть, что вам предложить!</p>
-          <ul class="features__list">
-            <li class="features__item">
-              <h3>Поднимает настроение</h3>
-              <p class="features_text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="features__item">
-              <h3>Меняет мир вокруг</h3>
-              <p class="features_text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="features__item">
-              <h3>Заводит новых друзей</h3>
-              <p class="features_text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+          <div class="features__wrapper">
+            <ul class="features__list">
+              <li class="features__item">
+                <h3>Поднимает настроение</h3>
+                <p class="features_text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item">
+                <h3>Меняет мир вокруг</h3>
+                <p class="features_text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="features__item">
+                <h3>Заводит новых друзей</h3>
+                <p class="features_text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="reviews">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
-          <ul class="reviews__list">
+          <ul class="reviews__list slider">
             <li class="reviews__item">
               <h3 class="reviews__title">Николай Петров</h3>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </li>
             <li class="reviews__item">
-              <h3 class="reviews__title">Второй чел</h3>
+              <h3 class="reviews__title">Второй чел</h3><!-- другие отзывы в мобильной версии не даны -->
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </li>
             <li class="reviews__item">
@@ -108,51 +113,51 @@
         <section class="price">
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="price__table">
-            <tr class="price__header">
-              <td>
+            <tr>
+              <th class="price__header">
                 <h3 class="price__title">База</h3>
                 <p class="price__coast">1,99 USD</p>
               </td>
-              <td>
+              <th class="price__header">
                 <h3 class="price__title price__title--hit">Стандарт</h3>
                 <p class="price__coast">3,99 USD</p>
               </td>
-              <td>
+              <th class="price__header">
                 <h3 class="price__title">Анлим</h3>
                 <p class="price__coast">9,99 USD</p>
               </td>
             </tr>
             <tr>
-              <td class="price__cell price__cell--on"> <!-- Здесь я переключаю зеленую галочку на красный крест применяя соответствующий модификатор -->
-                <p class="price__option">Розовый фильтр</p>
+              <td class="price__cell price__cell--on"> <!-- Здесь я отображаю зеленую галочку, либо красный крест применяя соответствующий модификатор ON или OFF-->
+                <p class="price__option-name">Розовый фильтр</p>
               </td>
               <td class="price__cell price__cell--off">
-                <p class="price__option">Розовый фильтр</p>
+                <p class="price__option-name">Розовый фильтр</p>
               </td>
               <td class="price__cell price__cell--off">
-                <p class="price__option">Розовый фильтр</p>
+                <p class="price__option-name">Розовый фильтр</p>
               </td>
             </tr>
             <tr>
               <td class="price__cell price__cell--on">
-                <p class="price__option">Смайлики</p>
+                <p class="price__option-name">Смайлики</p>
               </td>
               <td class="price__cell price__cell--on">
-                <p class="price__option">Смайлики</p>
+                <p class="price__option-name">Смайлики</p>
               </td>
               <td class="price__cell price__cell--off">
-                <p class="price__option">Смайлики</p>
+                <p class="price__option-name">Смайлики</p>
               </td>
             </tr>
             <tr>
               <td class="price__cell price__cell--on">
-                <p class="price__option">Комментарии</p>
+                <p class="price__option-name">Комментарии</p>
               </td>
               <td class="price__cell price__cell--on">
-                <p class="price__option">Комментарии</p>
+                <p class="price__option-name">Комментарии</p>
               </td>
               <td class="price__cell price__cell--on">
-                <p class="price__option">Комментарии</p>
+                <p class="price__option-name">Комментарии</p>
               </td>
             </tr>
           </table>
@@ -175,13 +180,15 @@
           <h2 class="visually-hidden">Как с нами связаться</h2>
           <p class="contacts__desc">Остались вопросы? Свяжитесь с нами!</p>
           <span class="contacts__title">Звоните:</span>
-          <a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
+          <a class="contacts__value" href="tel:+78125556666">+7(812)555-66-66</a>
           <span class="contacts__title">Пишите:</span>
-          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           <span class="contacts__title">Приезжайте в гости:</span>
-          ул. Большая Конюшенная, 19/8
+          <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <h2 class="visually-hidden">Карта, как нас найти</h2>
+        </div>
       </footer>
     </body>
 </html>

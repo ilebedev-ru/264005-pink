@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Фотографии пользователей</title>
+  </head>
+    <body>
+      <header class="main-header">
+        <div class="main-header__logo">
+          <img src="img/logo-mobile.png" alt="Логотип приложения Pink">
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="main-menu__burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-menu__close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </header>
+
+      <main class="photo-page">
+        <div class="intro">
+          <h1 class="intro__title">Фотографии пользователей</h1>
+        </div>
+
+        <section class="user-photo">
+          <h2 class="visually-hidden">Лента фотографий пользователей</h2>
+          <p class="user-photo__call">Вгзляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="user-photo__list">
+            <li class="user-photo__item panoram-of-the-day">
+              <a href="#"><img class="user-photo__image panoram-of-the-day__image" src="#" alt="Прыгать или нет..." ></a>
+              <div class="panoram-of-the-day__title">Панорама дня</div>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Анна</span><span class="user-photo__time">(5 минут назад)</span></p><!-- Или лучше сделать через cite и <blockquote> ? -->
+                <p class="user-photo__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в персикопе, задавайте своим вопросы!</p>
+                <div class="user-photo__like"> <!-- Я так понимаю, кликабельным будет только сердечко -->
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 215</span>
+                </div>
+              </div>
+            </li>
+            <li class="user-photo__item">
+              <a href="#"><img class="user-photo__image" src="#" alt="Вчера на луну летал.." ></a>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Левон</span><span class="user-photo__time">(5 часов назад)</span></p>
+                <p class="user-photo__desc">Вчера он на луну летал, сегодня в руки нам попал</p>
+                <div class="user-photo__like">
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 356</span>
+                </div>
+              </div>
+            </li>
+            <li class="user-photo__item">
+              <a href="#"><img class="user-photo__image" src="#" alt="Соседи будут рады..." ></a>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Антон</span><span class="user-photo__time">(12 часов назад)</span></p>
+                <p class="user-photo__desc">Соседи будут рады</p>
+                <div class="user-photo__like">
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 666</span>
+                </div>
+              </div>
+            </li>
+            <li class="user-photo__item">
+              <a href="#"><img class="user-photo__image" src="#" alt="Здесь могла бы быть..." ></a>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Борис</span><span class="user-photo__time">(20 часов назад)</span></p>
+                <p class="user-photo__desc">Здесь могла бы быть ваша цитата о высоком и вечном</p>
+                <div class="user-photo__like">
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 215</span>
+                </div>
+              </div>
+            </li>
+            <li class="user-photo__item">
+              <a href="#"><img class="user-photo__image" src="#" alt="Самая кубанская в мире..." ></a>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Сергей</span><span class="user-photo__time">(25 часов назад)</span></p>
+                <p class="user-photo__desc">Сама кубанская в мире!</p>
+                <div class="user-photo__like">
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 4</span>
+                </div>
+              </div>
+            </li>
+            <li class="user-photo__item">
+              <a href="#"><img class="user-photo__image" src="#" alt="Где снег то..." ></a>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Максим</span><span class="user-photo__time">(40 часов назад)</span></p>
+                <p class="user-photo__desc">Где снег то?</p>
+                <div class="user-photo__like">
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 150</span>
+                </div>
+              </div>
+            </li>
+            <li class="user-photo__item">
+              <a href="#"><img class="user-photo__image" src="#" alt="Всем GM и взаимные..." ></a>
+              <div class="user-photo__text">
+                <p class="user-photo__title"><span class="user-photo__author">Надежда</span><span class="user-photo__time">(45 часов назад)</span></p>
+                <p class="user-photo__desc">Всем GM и взаимные лайки!</p>
+                <div class="user-photo__like">
+                  <button class="user-photo__like-button" type="button"><span class="visually-hidden">Поставить лайк</span></button>
+                  <span class="user-photo__liked">Нравится: 2560</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="upload">
+          <h2 class="visually-hidden">Загрузить свою фотографию</h2>
+          <p class="upload__call">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <div class="upload__wrapper">
+            <form action="http://echo.htmlacademy.ru" method="get" class="upload__form">
+              <img class="upload__img" src="#" alt="Ваша фотография">
+
+              <div class="upload__edit">
+                <label for="crop" class="upload__instrument upload__instrument--crop">
+                  <span class="visually-hidden">Обрезать</span>
+                </label>
+
+                <label for="brightness" class="upload__instrument upload__instrument--brightness">
+                  <span class="visually-hidden">Заливка</span>
+                </label>
+
+                <label for="contrast" class="upload__instrument upload__instrument--contrast">
+                  <span class="visually-hidden">Контраст</span>
+                </label>
+
+                <input type="radio" name="range-bar" id="crop" checked>
+                <div class="upload__range-controls upload__range-controls--crop">
+                  <div class="upload__range-scale"></div>
+                  <div class="upload__range-toggle"></div>
+                </div>
+
+                <input type="radio" name="range-bar" id="brightness">
+                <div class="upload__range-controls upload__range-controls--brightness">
+                  <div class="upload__range-scale"></div>
+                  <div class="upload__range-toggle"></div>
+                </div>
+
+                <input type="radio" name="range-bar" id="contrast">
+                <div class="upload__range-controls upload__range-controls--contrast">
+                  <div class="upload__range-scale"></div>
+                  <div class="upload__range-toggle"></div>
+                </div>
+              </div>
+              <button type="submit" class="upload__button upload__button--submit">Запостить</button>
+              <button type="reset" class="upload__button upload__button--reset">Отмена</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="logotype">
+          <a href="index.html"><svg></svg></a>
+        </div>
+        <div class="social-media">
+          <ul class="social-media__list">
+            <li class="social-media__item">
+              <a class="social-media__button" href="#">
+                <span class="visually-hidden">Твиттер</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__button" href="#">
+                <span class="visually-hidden">Ютуб</span>
+                <svg></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <b class="copyright__text">Разработано</b> <a href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+        </div>
+      </footer>
+    </body>
+</html>
