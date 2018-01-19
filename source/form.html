@@ -45,13 +45,13 @@
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Введите ваше имя</legend>
               <label for="lastname" class="form__label">Фамилия:</label>
-              <input type="text" name="lastname" placeholder="Укажите фамилию *">
+              <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию *">
 
               <label for="name" class="form__label">Имя:</label>
-              <input type="text" name="name" placeholder="Введите ваше имя *">
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя *">
 
               <label for="second-name" class="form__label">Отчество:</label>
-              <input type="text" name="second-name" placeholder="Ну и отчество тоже">
+              <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--grey">
@@ -91,10 +91,10 @@
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Введите ваши контактные данные</legend>
               <label for="phone" class="form__label">Номер телефона:</label>
-              <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <input type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
 
               <label for="email" class="form__label">Адрес почты:</label>
-              <input type="text" name="email" placeholder="Введите почту *">
+              <input type="text" name="email" id="email" placeholder="Введите почту *">
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--grey">
@@ -115,7 +115,7 @@
 
             <fieldset>
               <legend class="form__legend">Опишите свои эмоции:</legend>
-              <input type="textarea" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              <textarea name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
 
             <button type="submit" class="form__button">Отправить форму</button>
