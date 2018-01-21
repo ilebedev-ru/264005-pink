@@ -6,38 +6,34 @@
   </head>
     <body>
       <header class="main-header">
-        <div class="main-header__logo">
-          <img src="img/logo-mobile.png" alt="Логотип приложения Pink">
+        <div class="main-header__wrapper">
+          <a href="index.html"><div class="main-header__logo"><img src="img/logo-mobile.png" alt="Логотип приложения Pink"></div></a>
+          <button class="main-header__button main-header__button--burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link main-menu__link--active" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--active" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="main-menu__burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <button class="main-menu__close" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
+        <div class="main-header__intro">
+          <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </header>
 
       <main class="form-page">
-        <div class="intro">
-          <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-
         <section class="form">
           <h2 class="visually-hidden">Форма отправки своей истории</h2>
           <p class="form__call">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
@@ -119,16 +115,16 @@
             </fieldset>
 
             <button type="submit" class="form__button">Отправить форму</button>
-            <p class="form__footnote"><span class="form__footnote--red">*</span> - Обязательные поля</p>
+            <p class="form__footnote"><span class="form__footnote form__footnote--red">*</span> - Обязательные поля</p>
           </form>
         </section>
       </main>
 
-      <footer>
-        <div class="logotype">
+      <footer class="footer-inner">
+        <div class="footer-inner__logotype">
           <a href="index.html"><svg></svg></a>
         </div>
-        <div class="social-media">
+        <div class="footer-inner__social-media social-media"> <!-- чет слишком много элементов у social-media, чтобы его не выносить в отдельный бэм-блок, смиксовал)  -->
           <ul class="social-media__list">
             <li class="social-media__item">
               <a class="social-media__button" href="#">
@@ -150,8 +146,8 @@
             </li>
           </ul>
         </div>
-        <div class="copyright">
-          <b class="copyright__text">Разработано</b> <a href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
+        <div class="footer-inner__copyright">
+          <b class="footer-inner__text">Разработано</b> <a href="https://htmlacademy.ru/intensive/adaptive"><svg></svg></a>
         </div>
       </footer>
     </body>
