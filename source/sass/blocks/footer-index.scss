@@ -1,0 +1,12 @@
+.footer-index {
+  padding-bottom: 70px;
+  width: 100%;
+  display: flex;
+  background-color: $white;
+  clip-path: polygon(0 0, 100% 1%, 100% 70%, 50% 100%, 0 70%);
+}
+
+.footer-index__map {
+  display: block;
+  height: 200px;
+}

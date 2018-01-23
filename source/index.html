@@ -3,34 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
     <body>
       <header class="main-header">
-        <div class="main-header__wrapper">
+        <div class="container">
+        <!-- <div class="main-header__wrapper"> -->
           <div class="main-header__box">
             <div class="main-header__logo">
-              <img src="img/logo-mobile.png" alt="Логотип приложения Pink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74.4 22.9"><style>.a{fill:#FFF;}</style><path d="M0 1.4c0-0.7 0.6-1.3 1.3-1.3h7.2c5.1 0 8.4 2.7 8.4 7.1v0.1c0 4.9-4.1 7.4-8.9 7.4H2.5v6.8c0 0.7-0.6 1.3-1.3 1.3C0.6 22.9 0 22.3 0 21.6V1.4zM8.1 12.4c3.7 0 6.2-2 6.2-5V7.4c0-3.2-2.4-4.9-6.1-4.9H2.5v9.9H8.1z" class="a"/><path d="M21.7 1.3C21.7 0.6 22.3 0 23 0c0.7 0 1.3 0.6 1.3 1.3v20.3c0 0.7-0.6 1.3-1.3 1.3 -0.7 0-1.3-0.6-1.3-1.3V1.3z" class="a"/><path d="M30.9 1.3c0-0.7 0.6-1.3 1.3-1.3h0.4c0.6 0 0.9 0.3 1.3 0.7l13.7 17.5V1.3C47.5 0.6 48 0 48.7 0c0.7 0 1.2 0.6 1.2 1.3v20.3c0 0.7-0.5 1.2-1.2 1.2h-0.1c-0.5 0-0.9-0.3-1.3-0.8L33.3 4.2v17.5c0 0.7-0.5 1.3-1.3 1.3 -0.7 0-1.2-0.6-1.2-1.3V1.3z" class="a"/><path d="M56.3 1.3C56.3 0.6 56.9 0 57.6 0c0.7 0 1.3 0.6 1.3 1.3v12.3L71.7 0.5C72 0.2 72.3 0 72.7 0c0.7 0 1.2 0.6 1.2 1.3 0 0.4-0.2 0.6-0.4 0.9l-8 7.9 8.6 10.6c0.2 0.3 0.4 0.5 0.4 0.9 0 0.7-0.6 1.3-1.3 1.3 -0.5 0-0.8-0.3-1-0.6l-8.4-10.5 -4.9 4.9v4.9c0 0.7-0.6 1.3-1.3 1.3 -0.7 0-1.3-0.6-1.3-1.3V1.3z" class="a"/></svg>
             </div>
             <button class="main-header__button main-header__button--burger" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="24" viewBox="0 0 49.9 24"><style>.a{fill:#FFF;}</style><path d="M1.1 0C0.5 0 0 0.4 0 1v2c0 0.6 0.5 1 1.1 1h47.7c0.6 0 1.1-0.4 1.1-1V1c0-0.6-0.5-1-1.1-1H1.1zM1.1 10C0.5 10 0 10.4 0 11v2c0 0.6 0.5 1 1.1 1h47.7c0.6 0 1.1-0.4 1.1-1v-2c0-0.6-0.5-1-1.1-1H1.1zM1.1 20C0.5 20 0 20.4 0 21v2c0 0.6 0.5 1 1.1 1h47.7c0.6 0 1.1-0.4 1.1-1v-2c0-0.6-0.5-1-1.1-1H1.1z" class="a"/><path d="M1.1 0C0.5 0 0 0.4 0 1v2c0 0.6 0.5 1 1.1 1h47.7c0.6 0 1.1-0.4 1.1-1V1c0-0.6-0.5-1-1.1-1H1.1zM1.1 10C0.5 10 0 10.4 0 11v2c0 0.6 0.5 1 1.1 1h47.7c0.6 0 1.1-0.4 1.1-1v-2c0-0.6-0.5-1-1.1-1H1.1zM1.1 20C0.5 20 0 20.4 0 21v2c0 0.6 0.5 1 1.1 1h47.7c0.6 0 1.1-0.4 1.1-1v-2c0-0.6-0.5-1-1.1-1H1.1z" class="a"/></svg>
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-          <nav class="main-menu">
-            <ul class="main-menu__list">
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Главная</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Фотографии</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Конкурс</a>
-              </li>
-              <li class="main-menu__item">
-                <a class="main-menu__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
+        </div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
         </div>
         <div class="main-header__intro main-header__intro--index">
           <h1 class="visually-hidden">Pink - мобильное приложение для фотографий</h1>
@@ -40,7 +44,8 @@
       <main>
         <section class="download-app">
           <h2 class="visually-hidden">Скачать приложение Pink на телефон</h2>
-          <div class="download-app__wrapper">
+       <!--    <div class="download-app__wrapper"> -->
+          <div class="container container--column">
             <a class="download-app__link" href="#">Скачать приложение</a>
             <ul class="download-app__list">
               <li class="download-app__item">
@@ -67,7 +72,7 @@
           <h2 class="visually-hidden">Преимущества приложения Pink</h2>
           <p class="features__desc">Устали от серости мегаполиса?</p>
           <p class="features__desc">Нам есть, что вам предложить!</p>
-          <div class="features__wrapper">
+          <div class="background-wrap features__wrapper">
             <ul class="features__list">
               <li class="features__item">
                 <p class="features__title">Поднимает настроение</p>
@@ -87,18 +92,20 @@
 
         <section class="reviews">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
-            <blockquote class="reviews__item">
-              <cite class="reviews__author">Николай Петров</cite>
-              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </blockquote>
-            <blockquote class="reviews__item">
-              <cite class="reviews__author">Второй чел</cite>
-              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </blockquote>
-            <blockquote class="reviews__item">
-              <cite class="reviews__author">Третий чел</cite>
-              <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-            </blockquote>
+            <div class="container">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              </blockquote>
+              <!-- <blockquote class="reviews__item ">
+                <cite class="reviews__author">Второй чел</cite>
+                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              </blockquote>
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Третий чел</cite>
+                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              </blockquote> -->
+            </div>
           <div class="slider">
             <button class="slider__toggle slider__toggle--active" type="button">
               <span class="visually-hidden">Первый отзыв</span>
@@ -113,83 +120,88 @@
         </section>
 
         <section class="price">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <table class="price__table">
-            <tr>
-              <th class="price__header">
-                <p class="price__title">База</p>
-                <p class="price__coast">1,99 USD</p>
-              </th>
-              <th class="price__header">
-                <p class="price__title price__title--hit">Стандарт</p>
-                <p class="price__coast">3,99 USD</p>
-              </th>
-              <th class="price__header">
-                <p class="price__title">Анлим</p>
-                <p class="price__coast">9,99 USD</p>
-              </th>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell--on"> <!-- Здесь я отображаю зеленую галочку, либо красный крест применяя соответствующий модификатор ON или OFF-->
-                <p class="price__option-name">Розовый фильтр</p>
-              </td>
-              <td class="price__cell price__cell--off">
-                <p class="price__option-name">Розовый фильтр</p>
-              </td>
-              <td class="price__cell price__cell--off">
-                <p class="price__option-name">Розовый фильтр</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell--on">
-                <p class="price__option-name">Смайлики</p>
-              </td>
-              <td class="price__cell price__cell--on">
-                <p class="price__option-name">Смайлики</p>
-              </td>
-              <td class="price__cell price__cell--off">
-                <p class="price__option-name">Смайлики</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell--on">
-                <p class="price__option-name">Комментарии</p>
-              </td>
-              <td class="price__cell price__cell--on">
-                <p class="price__option-name">Комментарии</p>
-              </td>
-              <td class="price__cell price__cell--on">
-                <p class="price__option-name">Комментарии</p>
-              </td>
-            </tr>
-          </table>
-          <div class="slider">
-            <button class="slider__toggle slider__toggle--active" type="button">
-              <span class="visually-hidden">Первый тариф</span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Второй тариф</span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Третий тариф</span>
-            </button>
+          <div class="background-wrap price__wrapper">
+            <h2 class="visually-hidden">Тарифы</h2>
+            <table class="price__table">
+              <tr>
+                <th class="price__header">
+                  <p class="price__title">База</p>
+                  <p class="price__coast">1,99 USD</p>
+                </th>
+                <th class="price__header">
+                  <p class="price__title price__title--hit">Стандарт</p>
+                  <p class="price__coast">3,99 USD</p>
+                </th>
+                <th class="price__header">
+                  <p class="price__title">Анлим</p>
+                  <p class="price__coast">9,99 USD</p>
+                </th>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell--on"> <!-- Здесь я отображаю зеленую галочку, либо красный крест применяя соответствующий модификатор ON или OFF-->
+                  <p class="price__option-name">Розовый фильтр</p>
+                </td>
+                <td class="price__cell price__cell--off">
+                  <p class="price__option-name">Розовый фильтр</p>
+                </td>
+                <td class="price__cell price__cell--off">
+                  <p class="price__option-name">Розовый фильтр</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell--on">
+                  <p class="price__option-name">Смайлики</p>
+                </td>
+                <td class="price__cell price__cell--on">
+                  <p class="price__option-name">Смайлики</p>
+                </td>
+                <td class="price__cell price__cell--off">
+                  <p class="price__option-name">Смайлики</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell--on">
+                  <p class="price__option-name">Комментарии</p>
+                </td>
+                <td class="price__cell price__cell--on">
+                  <p class="price__option-name">Комментарии</p>
+                </td>
+                <td class="price__cell price__cell--on">
+                  <p class="price__option-name">Комментарии</p>
+                </td>
+              </tr>
+            </table>
+            <div class="slider">
+              <button class="slider__toggle slider__toggle--active" type="button">
+                <span class="visually-hidden">Первый тариф</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Второй тариф</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Третий тариф</span>
+              </button>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="footer-index">
-        <div class="footer-index__contacts contacts">
-          <h2 class="visually-hidden">Как с нами связаться</h2>
-          <p class="contacts__desc">Остались вопросы? Свяжитесь с нами!</p>
-          <span class="contacts__title">Звоните:</span>
-          <a class="contacts__value" href="tel:+78125556666">+7(812)555-66-66</a>
-          <span class="contacts__title">Пишите:</span>
-          <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          <span class="contacts__title">Приезжайте в гости:</span>
-          <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+        <div class="container">
+          <div class="footer-index__contacts contacts">
+            <h2 class="visually-hidden">Как с нами связаться</h2>
+            <p class="contacts__desc">Остались вопросы?<br> Свяжитесь с нами!</p>
+            <span class="contacts__title">Звоните:</span>
+            <a class="contacts__value" href="tel:+78125556666">+7(812)555-66-66</a>
+            <span class="contacts__title">Пишите:</span>
+            <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <span class="contacts__title">Приезжайте в гости:</span>
+            <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+          </div>
         </div>
         <div class="footer-index__map">
           <h2 class="visually-hidden">Карта, как нас найти</h2>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5603025c2a190d21431e4abc6cbafb4f6d42210ebd94afb1575ebd4a3c345f66&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
       </footer>
     </body>
