@@ -1,0 +1,12 @@
+.footer-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.footer-inner__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
