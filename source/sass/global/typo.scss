@@ -3,7 +3,7 @@ body {
   padding: 0;
   min-width: 320px;
   background-color: $white;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: $fontsize;
@@ -28,8 +28,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   display: flex;
-
-    &--column {
-      flex-direction: column;
-    }
+  &--column {
+    flex-direction: column;
+  }
 }

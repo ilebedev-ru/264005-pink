@@ -4,20 +4,17 @@
   margin: 0;
   padding: 0;
 }
-
 .main-menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: $dark-blue;
 }
-
 .main-menu__item {
   margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid #000000;
 }
-
 .main-menu__link {
   display: block;
   width: 100%;
@@ -29,5 +26,5 @@
   text-transform: uppercase;
   color: $white;
   background-color: $dark-blue;
-  box-shadow: inset 0px 1px 0px 0px rgba (252,252,252,0.15);
+  box-shadow: inset 0px 1px 0px 0px rgba (252, 252, 252, 0.15);
 }

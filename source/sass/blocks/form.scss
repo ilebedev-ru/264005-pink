@@ -1,22 +1,19 @@
 .form {
   width: 100%;
 }
-
 .form__call {
   font-size: 14px;
   line-height: 30px;
   color: $dark-blue;
   text-align: center;
 }
-
 .form__fieldset {
   padding: 42px 20px;
   border: none;
   &--grey {
-      background-color: $grey;
+    background-color: $grey;
   }
 }
-
 .form__label {
   display: block;
   padding: 0px 23px;
@@ -25,7 +22,6 @@
   color: $red;
   text-transform: uppercase;
 }
-
 .form__legend {
   font-size: 14px;
   line-height: 18px;
@@ -33,7 +29,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .form__checkbox {
   display: block;
   padding-left: 70px;
@@ -42,7 +37,6 @@
   color: $dark-blue;
   cursor: pointer;
 }
-
 .form__radio {
   display: block;
   padding-left: 70px;
@@ -51,7 +45,6 @@
   color: $dark-blue;
   cursor: pointer;
 }
-
 .form__button {
   width: 280px;
   padding: 19px 0;
@@ -63,12 +56,11 @@
   background-color: #2aab6d;
   border: none;
 }
-
 .form__footnote {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   &--red {
-      color: $red;
+    color: $red;
   }
 }
