@@ -28,7 +28,9 @@
 
 .footer-inner__copyright svg {
   fill: $red;
+
   &:hover,
+
   &:focus {
     fill: $black;
   }
