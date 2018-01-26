@@ -18,3 +18,21 @@
   background-color: $grey;
 }
 
+.upload__button {
+  width: 280px;
+  padding: 12px 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: $grey;
+  border: 3px solid $red;
+  border-radius: 20px;
+    &--submit {
+      color: $red;
+    }
+    &--reset {
+      color: #dddfe0;
+      border-color: #dddfe0;
+    }
+}
+
