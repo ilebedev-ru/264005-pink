@@ -26,20 +26,19 @@
   background-color: $darken-blue;
   background-position: center top;
   background-repeat: no-repeat;
-
-    &--index {
-              height: 395px;
-              width: 100%;
-              background:
-                url("../../img/iphone-hand-mobile@1x.png"),
-                url("../../img/bg-back-mobile@1x.jpg");
-              background-position:
-                left bottom,
-                center top;
-              background-repeat:
-                no-repeat,
-                no-repeat;
-                    }
+  &--index {
+    height: 395px;
+    width: 100%;
+    background:
+      url("../../img/iphone-hand-mobile@1x.png"),
+      url("../../img/bg-back-mobile@1x.jpg");
+    background-position:
+      left bottom,
+      center top;
+    background-repeat:
+      no-repeat,
+      no-repeat;
+  }
 }
 
 .main-header__title {

@@ -27,11 +27,11 @@
   background-color: $grey;
   border: 3px solid $red;
   border-radius: 20px;
-    &--submit {
-      color: $red;
-    }
-    &--reset {
-      color: #dddfe0;
-      border-color: #dddfe0;
-    }
+  &--submit {
+    color: $red;
+  }
+  &--reset {
+    color: #dddfe0;
+    border-color: #dddfe0;
+  }
 }
