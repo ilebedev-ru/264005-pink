@@ -4,15 +4,18 @@
   width: 100%;
   background-color: $darken-blue;
 }
+
 .main-header__box {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .main-header__button {
   background-color: transparent;
   border: none;
 }
+
 .main-header__intro {
   width: 100%;
   height: 171px;
@@ -36,7 +39,9 @@
       no-repeat,
       no-repeat;
   }
+
 }
+
 .main-header__title {
   margin: 0;
   padding: 0;

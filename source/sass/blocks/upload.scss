@@ -11,11 +11,13 @@
   color: $dark-blue;
   background-color: $white;
 }
+
 .upload__wrapper {
   width: 320px;
   padding: 18px;
   background-color: $grey;
 }
+
 .upload__button {
   width: 280px;
   padding: 12px 0;
@@ -28,8 +30,10 @@
   &--submit {
     color: $red;
   }
+
   &--reset {
     color: #dddfe0;
     border-color: #dddfe0;
   }
+
 }

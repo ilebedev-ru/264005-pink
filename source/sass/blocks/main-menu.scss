@@ -4,17 +4,20 @@
   margin: 0;
   padding: 0;
 }
+
 .main-menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: $dark-blue;
 }
+
 .main-menu__item {
   margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid #000000;
 }
+
 .main-menu__link {
   display: block;
   width: 100%;

@@ -6,6 +6,7 @@
   background-color: transparent;
   margin: 0 auto;
 }
+
 .slider__toggle {
   display: block;
   width: 3px;
@@ -16,4 +17,5 @@
   &--active {
     border: 2px solid $black;
   }
+
 }
