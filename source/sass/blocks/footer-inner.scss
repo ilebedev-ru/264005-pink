@@ -9,6 +9,7 @@
 
 .footer-inner__logotype svg {
   fill: $dark-blue;
+
   &:hover,
   &:focus {
     fill: $red;
@@ -30,7 +31,6 @@
   fill: $red;
 
   &:hover,
-
   &:focus {
     fill: $black;
   }
