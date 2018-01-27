@@ -1,12 +1,11 @@
 .main-header {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  background-color: $darken-blue;
+  color: $white;
+  background-color: rgba($black, 0.3);
 }
 
-.main-header__box {
-  width: 100%;
+.main-header__upbox {
+  height: 69px;
   display: flex;
   justify-content: space-between;
 }
@@ -22,20 +21,21 @@
   padding: 0 20px;
   padding-top: 30px;
   text-align: center;
-  background: url("../../img/bg-back-mobile@1x.jpg");
+  background: url("../img/bg-back-mobile@1x.jpg");
   background-color: $darken-blue;
   background-position: center top;
   background-repeat: no-repeat;
 
   &--index {
     height: 395px;
-    width: 100%;
     background:
-      url("../../img/iphone-hand-mobile@1x.png"),
-      url("../../img/bg-back-mobile@1x.jpg");
+      url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-color: $darken-blue;
     background-position:
       left bottom,
       center top;
+    background-size: auto, 100%;
     background-repeat:
       no-repeat,
       no-repeat;

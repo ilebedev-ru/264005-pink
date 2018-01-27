@@ -3,9 +3,16 @@
   background-color: $white;
 }
 
+.reviews__wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
 .reviews__author {
   font-size: 18px;
   line-height: 30px;
+  color: $black;
+  font-style: normal;
   font-weight: 700;
 }
 
