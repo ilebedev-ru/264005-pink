@@ -1,0 +1,45 @@
+.contacts {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $dark-blue;
+  background-color: $white;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+}
+
+.contacts__wrap {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contacts__desc {
+  display: block;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $dark-blue;
+  background-color: $white;
+}
+
+.contacts__title {
+  display: block;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+.contacts__value {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #d22856;
+  text-decoration: none;
+}

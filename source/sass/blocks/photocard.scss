@@ -1,0 +1,65 @@
+.photocard {
+  width: 320px;
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 24px;
+
+  &--of-the-day {
+    width: 100%;
+  }
+}
+
+.photocard__image {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 180px;
+
+  &--of-the-day {
+    width: 100%;
+  }
+}
+
+.photocard__sticker {
+  display: block;
+  width: 140px;
+  padding: 8px 19px;
+  background-color: $red;
+  color: $white;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photocard__info {
+  padding: 18px;
+  margin: 0;
+  width: 280px;
+  background-color: $grey;
+}
+
+.photocard__author {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.photocard__time {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.photocard__desc {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.photocard__like {
+  margin: 0;
+  padding: 0;
+  color: $red;
+}

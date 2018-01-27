@@ -1,0 +1,37 @@
+.footer-inner {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+}
+
+.footer-inner__logotype svg {
+  fill: $dark-blue;
+
+  &:hover,
+  &:focus {
+    fill: $red;
+  }
+
+  &:active {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+}
+
+.footer-inner__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-inner__copyright svg {
+  fill: $red;
+
+  &:hover,
+  &:focus {
+    fill: $black;
+  }
+}

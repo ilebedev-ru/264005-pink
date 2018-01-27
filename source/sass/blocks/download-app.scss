@@ -1,0 +1,49 @@
+.download-app {
+  width: 100%;
+  color: $white;
+  background-color: $darken-blue;
+}
+
+.download-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px;
+}
+
+.download-app__link {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $white;
+  background-color: $darken-blue;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid $white;
+  border-radius: 27px;
+}
+
+.download-app__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.download-app__item {
+  margin: 0;
+  padding: 25px;
+  display: block;
+}
+
+.download-app__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+  background-color: $darken-blue;
+}

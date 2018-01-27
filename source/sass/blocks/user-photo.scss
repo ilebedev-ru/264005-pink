@@ -1,0 +1,17 @@
+.user-photo {
+  padding: 0 20px;
+  background-color: $white;
+}
+
+.user-photo__call {
+  color: $dark-blue;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.user-photo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

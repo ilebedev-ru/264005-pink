@@ -1,0 +1,39 @@
+.price {
+  background-color: $white;
+}
+
+.price__table {
+  width: 100%;
+  border-color: #e5e5e5;
+}
+
+.price__header {
+  min-width: 276px;
+  color: $white;
+  background-color: $darken-blue;
+}
+
+.price__title {
+  font-size: $fontsize;
+  line-height: 30px;
+  color: $white;
+  font-weight: 700;
+}
+
+.price__coast {
+  font-size: $fontsize;
+  line-height: 30px;
+  color: $white;
+  font-weight: 300;
+}
+
+.price__cell {
+  padding: 18px 0;
+  padding-left: 20px;
+  padding-right: 70px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $dark-blue;
+  background-color: $white;
+}
