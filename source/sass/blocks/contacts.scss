@@ -12,13 +12,40 @@
   clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
 }
 
-.contacts__wrap {
+.contacts__wrapper {
   margin: 0 auto;
   padding: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__items {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__items {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__items {
+    width: 33%;
+  }
+}
+
 .contacts__desc {
   display: block;
+  width: 100%;
+  flex-grow: 1;
   font-size: 24px;
   line-height: 1.2;
   color: $dark-blue;

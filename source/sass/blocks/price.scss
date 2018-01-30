@@ -1,16 +1,55 @@
 .price {
+  width: 100%;
   background-color: $white;
+}
+
+.price__wrapper {
+  padding-top: 90px;
+  background: url("../img/bg-triangle-white.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $grey;
 }
 
 .price__table {
   width: 100%;
+  margin: 0 auto;
   border-color: #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .price__table {
+    max-width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__table {
+    max-width: 940px;
+  }
 }
 
 .price__header {
   min-width: 276px;
   color: $white;
   background-color: $darken-blue;
+
+  &--none {
+    display: none;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__header {
+    min-width: 152px;
+
+    &--none {
+      display: block;
+    }
+  }
 }
 
 .price__title {
@@ -31,9 +70,54 @@
   padding: 18px 0;
   padding-left: 20px;
   padding-right: 70px;
+  background-color: $white;
+
+  &--first {
+    display: none;
+  }
+
+  &--on {
+    background: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 50%;
+    background-color: $white;
+  }
+
+  &--off {
+    background: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 50%;
+    background-color: $white; // есть проблема с пропаданием рамки
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .price__cell {
+    &--first {
+      display: block;
+    }
+
+    &--on,
+    &--off {
+      background-position: 50% 50%;
+    }
+  }
+}
+
+.price__option-name {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  color: $dark-blue;
-  background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .price__option-name {
+    display: none;
+
+    &--first {
+      display: block;
+    }
+  }
 }

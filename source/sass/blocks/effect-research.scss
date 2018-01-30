@@ -1,0 +1,49 @@
+.effect-research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect-research {
+    display: block;
+    width: 100%;
+  }
+
+  .effect-research__wrapper {
+    margin: 0 20px;
+    padding: 67px 0;
+    padding-left: 300px;
+  }
+
+  .effect-research__title {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  .effect-research__desc {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400px;
+
+    &--link {
+      display: block;
+      color: $red;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .effect-research {
+    background-color: $grey;
+  }
+
+  .effect-research__wrapper {
+    margin: 0 120px;
+    padding-left: 380px;
+  }
+}

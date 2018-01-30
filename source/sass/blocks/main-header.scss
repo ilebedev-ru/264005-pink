@@ -1,13 +1,41 @@
 .main-header {
   width: 100%;
   color: $white;
-  background-color: rgba($black, 0.3);
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-color: $darken-blue;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .main-header__upbox {
-  height: 69px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  background-color: rgba($black, 0.3);
+
+  &--nojs {
+    background-color: $dark-blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__upbox {
+    flex-wrap: nowrap;
+
+    &--nojs {
+      background-color: rgba($black, 0.3);
+    }
+  }
 }
 
 .main-header__button {
@@ -15,30 +43,39 @@
   border: none;
 }
 
+@media (min-width: $desktop-width) {
+  .main-header__button {
+    display: none;
+  }
+}
+
 .main-header__intro {
   width: 100%;
-  height: 171px;
-  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
   padding-top: 30px;
   text-align: center;
-  background: url("../img/bg-back-mobile@1x.jpg");
-  background-color: $darken-blue;
-  background-position: center top;
-  background-repeat: no-repeat;
 
   &--index {
-    height: 395px;
-    background:
-      url("../img/iphone-hand-mobile@1x.png"),
-      url("../img/bg-back-mobile@1x.jpg");
-    background-color: $darken-blue;
-    background-position:
-      left bottom,
-      center top;
-    background-size: auto, 100%;
-    background-repeat:
-      no-repeat,
-      no-repeat;
+    margin-top: 110px;
+    padding-top: 286px;
+    align-items: flex-end;
+    background: url("../img/iphone-hand-mobile@1x.png");
+    background-position: left top;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__intro {
+    &--index {
+      margin-top: 0;
+      padding-top: 0;
+      align-items: center;
+      background-position: 100% 100%;
+    }
   }
 }
 

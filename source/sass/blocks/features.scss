@@ -1,26 +1,82 @@
 .features {
   width: 100%;
-  background-color: $white;
+  padding-top: 20px;
   text-align: center;
+  background-color: $white;
 }
 
 .features__desc {
+  padding: 10px 50px;
+}
+
+.features__slogan {
   margin: 0;
-  padding: 30px 50px;
+  margin-bottom: 20px;
+  padding: 0;
   font-size: $fontsize;
   line-height: 1.2;
   font-weight: 300;
-  color: $dark-blue;
-  background-color: $white;
 }
 
 .features__wrapper {
-  padding: 80px 0;
+  padding: 80px 20px;
   padding-bottom: 300px;
-  background: url("../img/iphone-screen-mobile@1x.png");
+  background:
+    url("../img/iphone-screen-mobile@1x.png"),
+    url("../img/bg-triangle-white.svg");
+  background-position:
+    50% 100%,
+    50% 0;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-size:
+    157px auto,
+    720px auto;
   background-color: $grey;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .features__wrapper {
+    padding-left: 320px;
+    padding-bottom: 0;
+    text-align: left;
+    background-position:
+      0 100%,
+      50% 0;
+    background-size:
+      auto,
+      100% auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    padding: 0 120px;
+    padding-top: 300px;
+    text-align: center;
+    background:
+      url("../img/iphone-screen-mobile@1x.png"),
+      url("../img/iphone-screen-mobile@1x.png"),
+      url("../img/iphone-screen-mobile@1x.png"),
+      url("../img/bg-triangle-white.svg");
+    background-position:
+      15% 0,
+      50% 0,
+      85% 0,
+      0 0;
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-size:
+      auto,
+      auto,
+      auto,
+      100% auto;
+    background-color: $grey;
+  }
 }
 
 .features__list {
@@ -29,12 +85,31 @@
   list-style: none;
 }
 
+@media (min-width: $desktop-width) {
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 300px;
+    padding: 20px 20px; //но это не точно
+  }
+}
+
 .features__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
   color: $black;
   background-color: $grey;
   font-weight: 700;
 }
 
 .features__text {
-  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
 }

@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
     <body>
+      <!-- еще одна версия с оберткой только верхней строки -->
       <header class="main-header">
-        <div class="main-header__upbox">
+        <div class="main-header__upbox main-header__upbox--nojs">
           <div class="main-header__logo">
             логотип
           </div>
@@ -15,32 +16,29 @@
             кнопка меню
             <span class="visually-hidden">Открыть меню</span>
           </button>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Главная</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Главная</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-menu__item">
-              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
         <div class="main-header__intro main-header__intro--index">
           <h1 class="visually-hidden">Pink - мобильное приложение для фотографий</h1>
-        </div>
-      </header>
-
-      <main>
-        <section class="download-app">
+          <section class="download-app">
           <div class="download-app__wrapper">
             <h2 class="visually-hidden">Скачать приложение Pink на телефон</h2>
+            <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
             <a class="download-app__link" href="#">Скачать приложение</a>
             <ul class="download-app__list">
               <li class="download-app__item">
@@ -62,12 +60,17 @@
             <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </section>
+        </div>
+      </header>
 
+      <main>
         <section class="features">
           <h2 class="visually-hidden">Преимущества приложения Pink</h2>
-          <p class="features__desc">Устали от серости мегаполиса?</p>
-          <p class="features__desc">Нам есть, что вам предложить!</p>
-          <div class="background-wrap features__wrapper">
+          <div class="features__desc">
+            <p class="features__slogan">Устали от серости мегаполиса?</p>
+            <p class="features__slogan">Нам есть, что вам предложить!</p>
+          </div>
+          <div class="features__wrapper">
             <ul class="features__list">
               <li class="features__item">
                 <p class="features__title">Поднимает настроение</p>
@@ -84,12 +87,23 @@
             </ul>
           </div>
         </section>
+        <section class="effect-research">
+          <div class="effect-research__wrapper">
+            <h2 class="visually-hidden">Исследование эффекта</h2>
+            <p class="effect-research__title">Эффект на 24 часа!</p>
+            <p class="effect-research__desc">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится  целые сутки!
+              <a class="effect-research__desc effect-research__desc--link" href="#">Узнать больше об исследовании</a>
+            </p>
+          </div>
+        </section>
 
         <section class="reviews">
           <div class="reviews__wrapper">
             <h2 class="visually-hidden">Отзывы пользователей</h2>
             <blockquote class="reviews__item">
               <cite class="reviews__author">Николай Петров</cite>
+              <p class="reviews__author reviews__author--options">25 лет, водитель трамвая</p>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </blockquote>
             <!-- <blockquote class="reviews__item ">
@@ -100,25 +114,33 @@
               <cite class="reviews__author">Третий чел</cite>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </blockquote> -->
-          </div>
-          <div class="slider">
-            <button class="slider__toggle slider__toggle--active" type="button">
-              <span class="visually-hidden">Первый отзыв</span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Второй отзыв</span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Третий отзыв</span>
-            </button>
+            <div class="slider">
+              <button class="slider__toggle slider__toggle--active" type="button">
+                <span class="visually-hidden">Первый отзыв</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Второй отзыв</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Третий отзыв</span>
+              </button>
+              <button class="slider__arrows slider__arrows--prev" type="button">
+                <span class="visually-hidden">Влево</span>
+              </button>
+              <button class="slider__arrows slider__arrows--next" type="button">
+                <span class="visually-hidden">Влево</span>
+              </button>
+            </div>
           </div>
         </section>
 
         <section class="price">
-          <div class="background-wrap price__wrapper">
+          <div class="price__wrapper">
             <h2 class="visually-hidden">Тарифы</h2>
             <table class="price__table">
               <tr>
+                <th class="price__header price__header--none">
+                </th>
                 <th class="price__header">
                   <p class="price__title">База</p>
                   <p class="price__coast">1,99 USD</p>
@@ -133,8 +155,11 @@
                 </th>
               </tr>
               <tr>
+                <td class="price__cell price__cell--first">
+                  <p class="price__option-name price__option-name--first">Розовый фильтр</p>
+                </td>
                 <td class="price__cell price__cell--on">
-                  <p class="price__option-name">Розовый фильтр</p>
+                  <p class="price__option-name ">Розовый фильтр</p>
                 </td>
                 <td class="price__cell price__cell--off">
                   <p class="price__option-name">Розовый фильтр</p>
@@ -144,6 +169,9 @@
                 </td>
               </tr>
               <tr>
+                <td class="price__cell price__cell--first">
+                  <p class="price__option-name price__option-name--first">Смайлики</p>
+                </td>
                 <td class="price__cell price__cell--on">
                   <p class="price__option-name">Смайлики</p>
                 </td>
@@ -155,6 +183,9 @@
                 </td>
               </tr>
               <tr>
+                <td class="price__cell price__cell--first">
+                  <p class="price__option-name price__option-name--first">Комментарии</p>
+                </td>
                 <td class="price__cell price__cell--on">
                   <p class="price__option-name">Комментарии</p>
                 </td>
@@ -166,7 +197,7 @@
                 </td>
               </tr>
             </table>
-            <div class="slider">
+            <div class="slider slider--table">
               <button class="slider__toggle slider__toggle--active" type="button">
                 <span class="visually-hidden">Первый тариф</span>
               </button>
@@ -183,15 +214,21 @@
 
       <footer class="footer-index">
         <div class="footer-index__contacts contacts">
-          <div class="contacts__wrap">
+          <div class="contacts__wrapper">
             <h2 class="visually-hidden">Как с нами связаться</h2>
             <p class="contacts__desc">Остались вопросы?<br> Свяжитесь с нами!</p>
-            <span class="contacts__title">Звоните:</span>
-            <a class="contacts__value" href="tel:+78125556666">+7(812)555-66-66</a>
-            <span class="contacts__title">Пишите:</span>
-            <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            <span class="contacts__title">Приезжайте в гости:</span>
-            <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+            <div class="contacts__items">
+              <span class="contacts__title">Звоните:</span>
+              <a class="contacts__value" href="tel:+78125556666">+7(812)555-66-66</a>
+            </div>
+            <div class="contacts__items">
+              <span class="contacts__title">Пишите:</span>
+              <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__items">
+              <span class="contacts__title">Приезжайте в гости:</span>
+              <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
         </div>
         <div class="footer-index__map">

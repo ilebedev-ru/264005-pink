@@ -4,21 +4,58 @@
   background-color: $darken-blue;
 }
 
+@media (min-width: $tablet-width) {
+  .download-app {
+    background-color: transparent;
+  }
+}
+
 .download-app__wrapper {
+  max-width: 280px;
   display: flex;
   flex-direction: column;
-  padding: 28px 20px;
+  margin: 28px auto;
 }
+
+@media (min-width: $tablet-width) {
+  .download-app__wrapper {
+    max-width: 300px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app__wrapper {
+    margin-left: 120px;
+  }
+}
+
+.download-app__slogan {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app__slogan {
+    display: block;
+    padding: 28px 30px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+}
+
 
 .download-app__link {
   display: block;
   width: 100%;
+  max-width: 300px;
   padding: 10px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: $white;
-  background-color: $darken-blue;
   text-decoration: none;
   text-align: center;
   border: 3px solid $white;
@@ -44,6 +81,4 @@
   font-weight: 300;
   line-height: 24px;
   text-align: center;
-  color: $white;
-  background-color: $darken-blue;
 }
