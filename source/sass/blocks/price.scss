@@ -1,6 +1,7 @@
 .price {
   width: 100%;
   background-color: $white;
+  overflow: hidden;
 }
 
 .price__wrapper {
@@ -15,12 +16,14 @@
 .price__table {
   width: 100%;
   margin: 0 auto;
+  margin-left: -256px;
   border-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
   .price__table {
     max-width: 620px;
+    margin: 0 auto;
   }
 }
 

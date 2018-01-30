@@ -4,14 +4,29 @@
 }
 
 .user-photo__call {
-  color: $dark-blue;
+  max-width: 600px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__call {
+    font-size: 18px;
+  }
 }
 
 .user-photo__list {
-  margin: 0;
+  max-width: 940px;
+  margin: 0 auto;
   padding: 0;
+  display: flex;
+  flex-flow: row wrap;
   list-style: none;
+}
+
+.user-photo__item {
+  margin: 10px auto;
 }
