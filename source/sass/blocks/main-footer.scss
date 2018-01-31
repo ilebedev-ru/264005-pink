@@ -1,5 +1,6 @@
 .main-footer {
   width: 100%;
+  text-align: center;
   color: $dark-blue;
   background-color: $white;
 }
@@ -70,5 +71,34 @@
 @media (min-width: $desktop-width) {
   .footer-bottom {
     padding: 40px 120px;
+  }
+}
+
+.main-footer__logotype svg {
+  fill: $dark-blue;
+
+  &:hover,
+  &:focus {
+    fill: $red;
+  }
+
+  &:active {
+    fill: $dark-blue;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.main-footer__copyright svg {
+  fill: $red;
+
+  &:hover,
+  &:focus {
+    fill: $black;
   }
 }
