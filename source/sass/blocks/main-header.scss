@@ -5,47 +5,12 @@
   background-color: $darken-blue;
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: 100%;
-}
+  background-size: cover;
 
-@media (min-width: $desktop-width) {
-  .main-header {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-}
-
-.main-header__upbox {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: rgba($black, 0.3);
-
-  &--nojs {
-    background-color: $dark-blue;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header__upbox {
-    flex-wrap: nowrap;
-
-    &--nojs {
-      background-color: rgba($black, 0.3);
-    }
-  }
-}
-
-.main-header__button {
-  background-color: transparent;
-  border: none;
-}
-
-@media (min-width: $desktop-width) {
-  .main-header__button {
-    display: none;
   }
 }
 
@@ -62,19 +27,20 @@
     padding-top: 286px;
     align-items: flex-end;
     background: url("../img/iphone-hand-mobile@1x.png");
-    background-position: left top;
+    background-position: 50% 0;
     background-size: auto;
     background-repeat: no-repeat;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .main-header__intro {
-    &--index {
+    @media (min-width: $tablet-width) {
+      @include tablet-container;
       margin-top: 0;
       padding-top: 0;
       align-items: center;
       background-position: 100% 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include desktop-container;
     }
   }
 }
@@ -88,10 +54,8 @@
   line-height: 1.2;
   font-weight: 300;
   color: $white;
-}
 
-@media (min-width: $tablet-width) {
-  .main-header__title {
+  @media (min-width: $tablet-width) {
     max-width: 500px;
     font-size: 50px;
   }

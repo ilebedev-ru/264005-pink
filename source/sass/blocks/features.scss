@@ -19,7 +19,7 @@
 }
 
 .features__wrapper {
-  padding: 80px 20px;
+  padding-top: 80px;
   padding-bottom: 300px;
   background:
     url("../img/iphone-screen-mobile@1x.png"),
@@ -34,10 +34,8 @@
     157px auto,
     100%;
   background-color: $grey;
-}
 
-@media (min-width: $tablet-width) {
-  .features__wrapper {
+  @media (min-width: $tablet-width) {
     padding-left: 320px;
     padding-bottom: 0;
     text-align: left;
@@ -48,52 +46,54 @@
       auto,
       100% auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .features__wrapper {
-    padding: 0 120px;
-    padding-top: 300px;
+  @media (min-width: $desktop-width) {
+    padding: 0;
     text-align: center;
-    background:
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/bg-triangle-white.svg");
-    background-position:
-      15% 0,
-      50% 0,
-      85% 0,
-      0 0;
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat,
-      no-repeat;
-    background-size:
-      auto,
-      auto,
-      auto,
-      100% auto;
+    background: url("../img/bg-triangle-white.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     background-color: $grey;
   }
 }
 
 .features__list {
-  margin: 0;
-  padding: 0;
+  @include mobile-container;
   list-style: none;
-}
 
-@media (min-width: $desktop-width) {
-  .features__list {
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
     display: flex;
     justify-content: space-between;
   }
+}
 
+@media (min-width: $desktop-width) {
   .features__item {
-    width: 300px;
-    padding: 20px 20px; //но это не точно
+    padding: 20px 30px;
+    padding-top: 350px;
+
+    &--iphone1 {
+      background: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: auto;
+    }
+
+    &--iphone2 {
+      background: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: auto;
+    }
+
+    &--iphone3 {
+      background: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: auto;
+    }
   }
 }
 
@@ -103,8 +103,13 @@
   font-size: 18px;
   line-height: 24px;
   color: $black;
-  background-color: $grey;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    border-top: 2px solid $black;
+  }
 }
 
 .features__text {
@@ -112,4 +117,9 @@
   padding: 0;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

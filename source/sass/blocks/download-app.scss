@@ -2,42 +2,26 @@
   width: 100%;
   color: $white;
   background-color: $darken-blue;
-}
 
-@media (min-width: $tablet-width) {
-  .download-app {
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
     background-color: transparent;
   }
 }
 
 .download-app__wrapper {
-  max-width: 280px;
+  @include mobile-container;
   display: flex;
   flex-direction: column;
   margin: 28px auto;
-}
-
-@media (min-width: $tablet-width) {
-  .download-app__wrapper {
-    max-width: 300px;
-    margin-left: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download-app__wrapper {
-    margin-left: 120px;
-  }
 }
 
 .download-app__slogan {
   display: none;
   margin: 0;
   padding: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .download-app__slogan {
+  @media (min-width: $tablet-width) {
     display: block;
     padding: 28px 30px;
     font-size: 40px;
@@ -45,7 +29,6 @@
     font-weight: 300;
   }
 }
-
 
 .download-app__link {
   display: block;

@@ -1,0 +1,16 @@
+@mixin mobile-container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin tablet-container {
+  width: 620px;
+  margin: 0 auto;
+}
+
+@mixin desktop-container {
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 10px;
+}
