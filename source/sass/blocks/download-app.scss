@@ -67,12 +67,15 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .download-app__item {
   margin: 0;
   padding: 25px;
+  width: 33%; // хз хз
   display: block;
 }
 
