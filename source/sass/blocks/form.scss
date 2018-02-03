@@ -10,10 +10,8 @@
   line-height: 30px;
   color: $dark-blue;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .form__call {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
   }
 }
@@ -42,10 +40,8 @@
   &--apps {
     background-color: $grey;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .form__fieldset {
+  @media (min-width: $tablet-width) {
     padding: 0;
     margin: 30px 20px;
     background-color: $white;
@@ -72,10 +68,8 @@
       order: 5;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__fieldset {
+  @media (min-width: $desktop-width) {
     width: 100%;
 
     &--name,
@@ -142,10 +136,8 @@
   &--contacts {
     display: none;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .form__legend {
+  @media (min-width: $tablet-width) {
     padding: 0 32px;
     background-color: $white;
 
@@ -158,10 +150,8 @@
 .form__input {
   width: 100%;
   flex-grow: 2;
-}
 
-@media (min-width: $tablet-width) {
-  .form__input {
+  @media (min-width: $tablet-width) {
     width: auto;
 
     &--full-length {
@@ -179,16 +169,21 @@
   line-height: 30px;
   color: $dark-blue;
   cursor: pointer;
-}
 
-@media (min-width: $tablet-width) {
-  .form__checkbox {
+  &:hover .form__checkbox-indicator,
+  &:focus .form__checkbox-indicator {
+    border-color: $black;
+  }
+
+  &:active .form__checkbox-indicator {
+    border-color: $hover-red;
+  }
+
+  @media (min-width: $tablet-width) {
     padding-left: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__checkbox {
+  @media (min-width: $desktop-width) {
     width: 260px;
   }
 }
@@ -200,7 +195,8 @@
   top: 0;
   width: 39px;
   height: 39px;
-  background-color: $black; //временно для ориентации
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
 
   &--radio {
     border-radius: 50%;
@@ -223,10 +219,8 @@
   padding: 20px 20px;
   text-align: center;
   order: 999;
-}
 
-@media (min-width: $tablet-width) {
-  .form__button-area {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     text-align: left;

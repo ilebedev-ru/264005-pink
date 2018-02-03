@@ -6,7 +6,13 @@
 }
 
 .features__desc {
-  padding: 10px 50px;
+  @include mobile-container;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+    margin-bottom: 55px;
+  }
 }
 
 .features__slogan {
@@ -16,63 +22,61 @@
   font-size: $fontsize;
   line-height: 1.2;
   font-weight: 300;
-}
-
-.features__wrapper {
-  padding-top: 80px;
-  padding-bottom: 300px;
-  background:
-    url("../img/iphone-screen-mobile@1x.png"),
-    url("../img/bg-triangle-white.svg");
-  background-position:
-    50% 100%,
-    50% 0;
-  background-repeat:
-    no-repeat,
-    no-repeat;
-  background-size:
-    157px auto,
-    100%;
-  background-color: $grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 320px;
-    padding-bottom: 0;
-    text-align: left;
-    background-position:
-      0 100%,
-      50% 0;
-    background-size:
-      auto,
-      100% auto;
+    margin: 0;
+    font-size: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    text-align: center;
-    background: url("../img/bg-triangle-white.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: $grey;
+    font-size: 50px;
   }
+}
+
+.features__wrapper {
+  background: url("../img/bg-triangle-white.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $grey;
 }
 
 .features__list {
   @include mobile-container;
+  padding-top: 80px;
+  padding-bottom: 340px;// на глаз
+  margin-bottom: -83px;// на глаз
   list-style: none;
+  background: url("../img/iphone-screen-mobile@1x.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  // background-size: 157px auto;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-container;
+    padding-left: 310px;
+    padding-top: 80px;
+    padding-bottom: 1px;//хз почему 1пх прибавляет 10))
+    text-align: left;
+    background-position: 20px 0;
+    background-size: 250px auto;
+  }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
     display: flex;
     justify-content: space-between;
+    background: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .features__item {
+.features__item {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
     padding: 20px 30px;
     padding-top: 350px;
+    text-align: center;
 
     &--iphone1 {
       background: url("../img/iphone-screen-mobile@1x.png");
@@ -108,7 +112,6 @@
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
-    border-top: 2px solid $black;
   }
 }
 

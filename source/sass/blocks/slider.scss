@@ -6,20 +6,16 @@
   justify-content: center;
   background-color: transparent;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .slider {
+  @media (min-width: $tablet-width) {
     &--table {
       display: none;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .slider {
+  @media (min-width: $desktop-width) {
     height: 22px;
-    // position: absolute; тут пока проблема с шириной
+    position: absolute;
     top: 50%;
     margin-top: -11px;
   }
@@ -37,20 +33,16 @@
   &--active {
     border: 2px solid $black;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .slider__toggle {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
 .slider__arrows {
   display: none;
-}
 
-@media (min-width: $desktop-width) {
-  .slider__arrows {
+  @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
     top: 50%;
