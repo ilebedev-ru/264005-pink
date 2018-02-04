@@ -20,6 +20,10 @@
   padding-top: 30px;
   text-align: center;
 
+  &--inner {
+    @include mobile-container;
+  }
+
   @media (min-width: $tablet-width) {
     @include tablet-container;
   }
@@ -30,7 +34,6 @@
 }
 
 .main-header__title {
-  // max-width: 280px;
   display: block;
   margin: 0 auto;
   padding: 0;

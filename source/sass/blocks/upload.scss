@@ -16,21 +16,20 @@
 }
 
 .upload__wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 20px;
+  @include mobile-container;
   background-color: $grey;
-}
 
-@media (min-width: $tablet-width) {
-  .upload__wrapper {
-    padding: 57px 20px;
+  @media (min-width: $tablet-width) {
+    @include tablet-container;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    background-color: $white;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .upload__wrapper {
-    padding: 57px 80px;
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+    padding-top: 57px;
+    padding-bottom: 57px;
   }
 }
 
@@ -38,6 +37,7 @@
   .upload__form {
     display: flex;
     justify-content: space-between;
+    background-color: $grey;
   }
 
   .upload__edit {

@@ -1,5 +1,6 @@
 .photocard {
-  min-width: 280px;
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,17 +9,16 @@
   line-height: 24px;
   background-color: $grey;
 
-  &--of-the-day {
-    position: relative;
-    width: 100%;
-    flex-grow: 5;
-    display: block;
-  }
-}
+  @media (min-width: $tablet-width) {
+    width: 45%;
 
-@media (min-width: $tablet-width) {
-  .photocard {
-    width: 300px;
+    &--of-the-day {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
 
     &--of-the-day {
       width: 100%;

@@ -19,7 +19,7 @@
     left: 0;
     right: 0;
     width: inherit;
-    height: 62px;
+    height: 68px;
     background: url("../img/bg-triangle-white-footer.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -40,62 +40,4 @@
 .main-footer__map img {
   width: 100%;
   height: auto;
-}
-
-.footer-bottom {
-  @include mobile-container;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  &--index {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    @include tablet-container;
-    padding-bottom: 36px;
-    padding-top: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    &--index {
-      display: flex;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    @include desktop-container;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-.main-footer__logotype svg {
-  fill: $dark-blue;
-
-  &:hover,
-  &:focus {
-    fill: $red;
-  }
-
-  &:active {
-    fill: $dark-blue;
-    opacity: 0.3;
-  }
-}
-
-.main-footer__text {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-}
-
-.main-footer__copyright svg {
-  fill: $red;
-
-  &:hover,
-  &:focus {
-    fill: $black;
-  }
 }
