@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display:none;
+    display: none;
   }
 }
 
@@ -81,7 +81,7 @@
   list-style: none;
 
   &--nojs {
-    display:block;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {

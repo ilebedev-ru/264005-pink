@@ -16,24 +16,25 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form__area {
-    margin: 0 auto;
+.form__area {
+  @include mobile-container;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-container;
     display: flex;
     flex-direction: column;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__area {
-    max-width: 940px;
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .form__fieldset {
-  padding: 42px 20px;
+  padding: 42px 0;
   border: none;
 
   &--progress,
@@ -43,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 30px 20px;
+    margin: 30px 0;
     background-color: $white;
     border: 2px solid #e5e5e5;
 
@@ -74,7 +75,7 @@
 
     &--name,
     &--apps {
-      width: 430px;
+      width: 435px;
     }
   }
 }
@@ -216,7 +217,7 @@
 
 .form__button-area {
   width: 100%;
-  padding: 20px 20px;
+  padding: 20px 0;
   text-align: center;
   order: 999;
 
@@ -248,5 +249,13 @@
 
   &--red {
     color: $red;
+  }
+
+  &--view {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 }

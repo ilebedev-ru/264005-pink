@@ -23,13 +23,13 @@
     @include tablet-container;
     padding-top: 57px;
     padding-bottom: 57px;
-    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
     padding-top: 57px;
     padding-bottom: 57px;
+    background-color: $white;
   }
 }
 
