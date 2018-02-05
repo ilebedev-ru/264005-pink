@@ -1,17 +1,37 @@
 .user-photo {
-  padding: 0 20px;
+  @include mobile-container;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-container;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+  }
 }
 
 .user-photo__call {
-  color: $dark-blue;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .user-photo__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow: row wrap;
   list-style: none;
+  justify-content: space-between;
+}
+
+.user-photo__item {
+  margin: 10px 0;
 }
