@@ -1,52 +1,49 @@
 .main-header {
   width: 100%;
   color: $white;
-  background-color: rgba($black, 0.3);
-}
-
-.main-header__upbox {
-  height: 69px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-header__button {
-  background-color: transparent;
-  border: none;
-}
-
-.main-header__intro {
-  width: 100%;
-  height: 171px;
-  padding: 0 20px;
-  padding-top: 30px;
-  text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg");
   background-color: $darken-blue;
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
 
-  &--index {
-    height: 395px;
-    background:
-      url("../img/iphone-hand-mobile@1x.png"),
-      url("../img/bg-back-mobile@1x.jpg");
-    background-color: $darken-blue;
-    background-position:
-      left bottom,
-      center top;
-    background-size: auto, 100%;
-    background-repeat:
-      no-repeat,
-      no-repeat;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.main-header__intro {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+
+  &--inner {
+    @include mobile-container;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include tablet-container;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
   }
 }
 
 .main-header__title {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   padding: 0;
   font-size: $fontsize;
   line-height: 1.2;
   font-weight: 300;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+    font-size: 50px;
+  }
 }

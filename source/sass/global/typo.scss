@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: $mobile-width;
   background-color: $white;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -9,6 +9,18 @@ body {
   font-size: $fontsize;
   line-height: 1.2;
   color: $dark-blue;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
 }
 
 .visually-hidden {

@@ -1,23 +1,111 @@
 .price {
+  width: 100%;
   background-color: $white;
 }
 
-.price__table {
-  width: 100%;
-  border-color: #e5e5e5;
+.price__wrapper {
+  padding-top: 90px;
+  background: url("../img/bg-triangle-white.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $grey;
+  overflow: hidden;
 }
 
-.price__header {
-  min-width: 276px;
-  color: $white;
-  background-color: $darken-blue;
+.price__table {
+  min-width: 262%;
+  border-color: #e5e5e5;
+
+  &--first {
+    margin-left: 0;
+  }
+
+  &--second {
+    margin-left: -81%;
+  }
+
+  &--third {
+    margin-left: -62%;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include tablet-container;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+  }
+}
+
+.price__cell {
+  padding: 18px 0;
+  // padding-left: 20px;
+  // padding-right: 70px;
+  background-color: $white;
+
+  &--none {
+    display: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  &--first {
+    display: none;
+  }
+
+  &--header {
+    color: $white;
+    background-color: $darken-blue;
+  }
+
+  &--on {
+    background: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 50%;
+    background-color: $white;
+  }
+
+  &--off {
+    background: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 50%;
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--first {
+      display: block;
+    }
+
+    &--on,
+    &--off {
+      background-position: 50% 50%;
+    }
+
+    &--none {
+      display: block;
+      background: transparent;
+    }
+  }
 }
 
 .price__title {
-  font-size: $fontsize;
+  font-size: 18px;
   line-height: 30px;
   color: $white;
   font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .price__coast {
@@ -25,15 +113,26 @@
   line-height: 30px;
   color: $white;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $fontsize;
+  }
 }
 
-.price__cell {
-  padding: 18px 0;
-  padding-left: 20px;
-  padding-right: 70px;
+.price__option-name {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  color: $dark-blue;
-  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--first {
+      display: block;
+    }
+  }
 }

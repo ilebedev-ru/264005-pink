@@ -1,0 +1,43 @@
+.main-footer {
+  width: 100%;
+  text-align: center;
+  color: $dark-blue;
+  background-color: $white;
+}
+
+.main-footer__map {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: 68px;
+    background: url("../img/bg-triangle-white-footer.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-footer__map iframe {
+  width: 100%;
+  border: none;
+}
+
+.main-footer__map img {
+  width: 100%;
+  height: auto;
+}
