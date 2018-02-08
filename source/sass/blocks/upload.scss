@@ -1,5 +1,6 @@
 .upload {
   width: 100%;
+  padding-top: 30px;
   color: $dark-blue;
   background-color: $white;
   text-align: center;
@@ -7,7 +8,8 @@
 
 .upload__call {
   margin: 0;
-  padding: 0;
+  margin-bottom: 40px;
+  padding: 0 20px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -16,13 +18,16 @@
 }
 
 .upload__wrapper {
-  @include mobile-container;
+  width: 100%;
+  padding-top: 20px;
   background-color: $grey;
+
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
     padding-top: 57px;
     padding-bottom: 57px;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,15 +44,97 @@
     justify-content: space-between;
     background-color: $grey;
   }
+}
 
-  .upload__edit {
+.upload__edit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 48px;
+  }
+}
+
+.upload__instrument {
+  margin: 30px 20px;
+
+  svg {
+    fill: #b5b9be;
+  }
+
+  &--active {
+    svg {
+      fill: $red;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
     display: flex;
+    margin: 0;
+    border-bottom: 2px solid #dddfe0;
+  }
+}
+
+.upload__range-controls {
+  display: none;
+  width: 100%;
+  position: relative;
+  padding-bottom: 34px;
+  margin-bottom: 38px;
+  border-bottom: 2px solid #dddfe0;
+
+  &--common {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: none;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    padding-top: 19px;
+
+    &--common {
+      display: none;
+    }
+  }
+}
+
+.upload__range-scale {
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+}
+
+.upload__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 200px;
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border: 2px solid $red;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
   }
 }
 
 .upload__button {
   width: 280px;
   padding: 12px 0;
+  margin-bottom: 12px;
   font: inherit;
   font-size: 18px;
   line-height: 18px;
@@ -63,5 +150,6 @@
   &--reset {
     color: #dddfe0;
     border-color: #dddfe0;
+    margin-bottom: 40px;
   }
 }

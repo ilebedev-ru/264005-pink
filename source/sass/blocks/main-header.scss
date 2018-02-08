@@ -17,19 +17,27 @@
 .main-header__intro {
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 109px;
   text-align: center;
 
   &--inner {
     @include mobile-container;
+     padding-top: 30px;
+     padding-bottom: 80px;
   }
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
+    padding-top: 73px;
+
+    &--inner {
+      padding-bottom: 143px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
+    padding-top: 93px;
   }
 }
 

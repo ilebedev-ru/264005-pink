@@ -31,18 +31,21 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
+    width: 100%;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
+    margin-bottom: 95px;
   }
 }
 
 .price__cell {
-  padding: 18px 0;
-  // padding-left: 20px;
-  // padding-right: 70px;
+  position: relative;
+  padding: 15px 22px;
   background-color: $white;
+  overflow: hidden;
 
   &--none {
     display: none;
@@ -55,6 +58,7 @@
   }
 
   &--header {
+    padding: 18px 22px;
     color: $white;
     background-color: $darken-blue;
   }
@@ -76,6 +80,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-width: 154px;
+    padding: 7px 18px;
+
     &--first {
       display: block;
     }
@@ -90,9 +97,16 @@
       background: transparent;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 235px;
+    padding: 14px 24px;
+  }
 }
 
 .price__title {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px;
   color: $white;
@@ -108,7 +122,27 @@
   }
 }
 
+.price__hit {
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  width: 120px;
+  background-color: #d22856;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: -40px;
+  }
+}
+
 .price__coast {
+  margin: 0;
+  padding: 0;
   font-size: $fontsize;
   line-height: 30px;
   color: $white;
@@ -124,6 +158,8 @@
 }
 
 .price__option-name {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -133,6 +169,11 @@
 
     &--first {
       display: block;
+      text-transform: none;
+
+      @media (min-width: $tablet-width) {
+        font-size: 18px;
+      }
     }
   }
 }

@@ -9,8 +9,13 @@
   line-height: 24px;
   background-color: $grey;
 
+  a {
+    display: block;
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 45%;
+    width: 48%;
 
     &--of-the-day {
       width: 100%;
@@ -26,19 +31,14 @@
   }
 }
 
-.photocard a {
-  display: block;
-  width: 100%;
-}
-
-.photocard__image img {
-  width: 100%;
-}
-
 .photocard__image {
   width: 100%;
   padding: 0;
   margin: 0;
+
+  img {
+    width: 100%;
+  }
 
   &--of-the-day {
     width: 100vw;
@@ -53,7 +53,7 @@
 .photocard__sticker {
   position: absolute;
   top: 0;
-  right: 10%;
+  right: 0;
   display: block;
   width: 140px;
   padding: 8px 19px;
@@ -66,10 +66,21 @@
 }
 
 .photocard__info {
-  padding: 18px;
+  padding: 13px 18px;
   margin: 0;
   width: 100%;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--of-the-day .photocard__like {
+      order: 2;
+      width: auto;
+      margin-left: auto;
+    }
+  }
 }
 
 .photocard__author {
@@ -77,22 +88,63 @@
   padding: 0;
   font-weight: 700;
   font-style: normal;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;;
+  }
 }
 
 .photocard__time {
   margin: 0;
   padding: 0;
   font-weight: 300;
+  order: 2;
 }
 
 .photocard__desc {
+  width: 100%;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   font-weight: 400;
+  order: 3;
 }
 
 .photocard__like {
-  margin-top: auto;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
   padding: 0;
   color: $red;
+  order: 4;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+}
+
+.photocard__button {
+  margin: 0;
+  margin-right: 19px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  svg {
+    fill: $red;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-left: 19px;
+  }
+}
+
+.photocard__liked {
+  margin: 0;
+  padding: 0;
 }

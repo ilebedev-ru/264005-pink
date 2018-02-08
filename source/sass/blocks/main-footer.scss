@@ -19,7 +19,7 @@
     left: 0;
     right: 0;
     width: inherit;
-    height: 68px;
+    height: 200px;
     background: url("../img/bg-triangle-white-footer.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -28,7 +28,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: none;
+    height: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 500px;
   }
 }
 
