@@ -4,6 +4,14 @@
   color: $dark-blue;
   background-color: $white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .upload__call {
@@ -15,6 +23,15 @@
   font-weight: 400;
   color: $dark-blue;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .upload__wrapper {
@@ -32,8 +49,8 @@
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
-    padding-top: 57px;
-    padding-bottom: 57px;
+    // padding-top: 57px;
+    // padding-bottom: 57px;
     background-color: $white;
   }
 }
