@@ -19,7 +19,8 @@
 }
 
 .form__area {
-  @include mobile-container;
+  // @include mobile-container;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
@@ -36,7 +37,7 @@
 }
 
 .form__fieldset {
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   margin-bottom: 22px;
   border: none;
@@ -46,6 +47,11 @@
     position: relative;
     background-color: $grey;
     padding-top: 90px;
+  }
+
+  &--emotions {
+    position: relative;
+    padding-top: 50px;
   }
 
   @media (min-width: $tablet-width) {
@@ -137,6 +143,7 @@
 
 .form__legend {
   position: absolute;
+  display: block;
   top: 40px;
   margin: 0;
   padding: 0;
@@ -146,6 +153,10 @@
   color: $red;
   text-align: center;
   text-transform: uppercase;
+
+  &--emotions {
+    top: 20px;
+  }
 
   &--contacts {
     display: none;
@@ -220,7 +231,7 @@
   top: 0;
   width: 39px;
   height: 39px;
-  background-color: transparent;
+  background-color: $white;
   border: 2px solid #e5e5e5;
 
   &--radio {
