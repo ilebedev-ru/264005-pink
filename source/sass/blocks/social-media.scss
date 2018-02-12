@@ -16,4 +16,13 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   fill: $red;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

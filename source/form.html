@@ -40,21 +40,22 @@
       <main class="form-page">
         <section class="form">
           <h2 class="visually-hidden">Форма отправки своей истории</h2>
-          <p class="form__call">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <p class="form__call">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            <span class="form__hiddentext">Пожалуйста, заполните форму ниже:</span></p>
           <form action="http://echo.htmlacademy.ru" method="get" class="form__area">
             <fieldset class="form__fieldset form__fieldset--name">
+              <legend class="visually-hidden">Введите ваше имя</legend>
               <div class="form__fieldset-wrapper form__fieldset-wrapper--name">
                 <div class="form__input-wrapper">
-                  <legend class="visually-hidden">Введите ваше имя</legend>
-                  <label for="lastname" class="form__label">Фамилия:</label>
+                  <label for="lastname" class="form__label form__label--name">Фамилия:</label>
                   <input type="text" class="form__input" name="lastname" id="lastname" placeholder="Укажите фамилию *">
                 </div>
                 <div class="form__input-wrapper">
-                  <label for="name" class="form__label">Имя:</label>
+                  <label for="name" class="form__label form__label--name">Имя:</label>
                   <input type="text" class="form__input" name="name" id="name" placeholder="Введите ваше имя *">
                 </div>
                 <div class="form__input-wrapper">
-                  <label for="second-name" class="form__label">Отчество:</label>
+                  <label for="second-name" class="form__label form__label--name">Отчество:</label>
                   <input type="text" class="form__input" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
                 </div>
               </div>
@@ -104,11 +105,13 @@
                 <div class="form__input-wrapper form__input-wrapper--full-length">
                   <label for="phone" class="form__label">Номер телефона</label>
                   <input type="tel" class="form__input form__input--full-length" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                  <span class="form__icon"></span>
                 </div>
 
                 <div class="form__input-wrapper form__input-wrapper--full-length">
                   <label for="email" class="form__label">Адрес почты</label>
                   <input type="text" class="form__input form__input--full-length" name="email" id="email" placeholder="Введите почту *">
+                  <span class="form__icon"></span>
                 </div>
               </div>
             </fieldset>
@@ -118,15 +121,15 @@
                 С каким приложением путешествовали?
               </legend>
               <div class="form__fieldset-wrapper">
-                <label class="form__radio">
+                <label class="form__checkbox">
                   <input type="radio" class="visually-hidden" name="app" checked>
                   <span class="form__checkbox-indicator form__checkbox-indicator--radio"></span> Pink для iOS
                 </label>
-                <label class="form__radio">
+                <label class="form__checkbox">
                   <input type="radio" class="visually-hidden" name="app">
                   <span class="form__checkbox-indicator form__checkbox-indicator--radio"></span> Pink на Android
                 </label>
-                <label class="form__radio">
+                <label class="form__checkbox">
                   <input type="radio" class="visually-hidden" name="app">
                   <span class="form__checkbox-indicator form__checkbox-indicator--radio"></span> Windows Phone
                 </label>
@@ -136,7 +139,7 @@
             <fieldset class="form__fieldset form__fieldset--emotions">
               <legend class="form__legend form__legend--emotions">Опишите свои эмоции:</legend>
               <div class="form__fieldset-wrapper">
-                <textarea name="emotion" class="form__input form__input--full-length" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea name="emotion" class="form__input form__input--full-length form__input--textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
             <div class="form__button-area">

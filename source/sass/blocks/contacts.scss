@@ -93,7 +93,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
-
 }
 
 .contacts__value {
@@ -105,4 +104,15 @@
   font-weight: 300;
   color: #d22856;
   text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
+
+  &[href]:active {
+    color: $dark-blue;
+    opacity: 0.3;
+  }
 }

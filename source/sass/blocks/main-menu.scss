@@ -63,14 +63,14 @@
   &:hover,
   &:focus {
     &::before {
-      background-color: $hover-red;
-      box-shadow: 0 10px 0 0 $hover-red, 0 20px 0 0 $hover-red;
+      background-color: $red;
+      box-shadow: 0 10px 0 0 $red, 0 20px 0 0 $red;
     }
   }
 
   &:active {
     &::before {
-      background-color: $hover-red;
+      background-color: $red;
       opacity: 0.3;
     }
   }
@@ -88,7 +88,7 @@
       content: "";
       position: absolute;
       top: 12px;
-      left: 0px;
+      left: 0;
       width: 24px;
       height: 3px;
       background-color: $white;
@@ -107,16 +107,16 @@
     &:focus {
       &::before,
       &::after {
-      background-color: $hover-red;
-      box-shadow: none;
+        background-color: $red;
+        box-shadow: none;
       }
     }
 
     &:active {
       &::before,
       &::after {
-      background-color: $hover-red;
-      opacity: 0.3;
+        background-color: $red;
+        opacity: 0.3;
       }
     }
   }
@@ -170,11 +170,11 @@
 
   &:hover,
   &:focus {
-    color: $hover-red;
+    color: $red;
   }
 
   &:active {
-    color: $hover-red;
+    color: $red;
     opacity: 0.3;
   }
 
@@ -189,6 +189,16 @@
 
     &--active {
       border-bottom: 2px solid $white;
+
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+    }
+
+    &:active {
+      color: $white;
+      opacity: 0.3;
     }
   }
 }
