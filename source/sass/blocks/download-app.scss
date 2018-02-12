@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding: 12px 0;
+    padding: 18px 0;
     margin-left: 0;
     background-color: transparent;
   }
@@ -37,10 +37,16 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 28px 30px;
+    padding: 0 30px;
+    margin-bottom: 28px;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 300;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    font-size: 50px;
   }
 }
 
@@ -58,32 +64,64 @@
   border: 3px solid $white;
   border-radius: 27px;
 
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $red;
+  }
+
+  &:active {
+    color: rgba($red, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
   }
 }
 
 .download-app__list {
-  margin: 0;
+  margin: 0 37px;
+  margin-top: 37px;
+  margin-bottom: 20px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 47px;
+    margin-top: 47px;
+    margin-bottom: 30px;
+  }
 }
 
 .download-app__item {
   margin: 0;
-  padding: 25px;
-  width: 33%; // хз хз
+  padding: 0;
   display: block;
   font-size: 12px;
 }
 
 .download-app__text {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+  }
 }

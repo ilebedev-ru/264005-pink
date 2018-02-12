@@ -37,6 +37,15 @@
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    color: $black;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   .effect-research__desc {
@@ -48,7 +57,12 @@
 
     &--link {
       display: block;
+      margin-top: 10px;
       color: $red;
+
+      @media (min-width: $desktop-width) {
+        margin-top: 20px;
+      }
     }
   }
 }

@@ -1,10 +1,24 @@
 .form {
   width: 100%;
+  padding-top: 45px;
+
+  input,
+  textarea {
+    &:hover {
+      border-color: $black;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $red;
+    }
+  }
 }
 
 .form__call {
   max-width: 820px;
   margin: 0 auto;
+  margin-bottom: 34px;
   padding: 0 20px;
   font-size: 14px;
   line-height: 30px;
@@ -13,11 +27,21 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    margin-bottom: 72px;
+  }
+}
+
+.form__hiddentext {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
 .form__area {
-  @include mobile-container;
+  // @include mobile-container;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
@@ -34,35 +58,59 @@
 }
 
 .form__fieldset {
-  padding: 42px 0;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 22px;
   border: none;
 
   &--progress,
   &--apps {
+    position: relative;
     background-color: $grey;
+    padding-top: 113px;
+  }
+
+  &--emotions {
+    position: relative;
+    padding-top: 50px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    margin: 30px 0;
+    padding-top: 40px;
+    padding-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0;
+    margin-bottom: 57px;
     background-color: $white;
     border: 2px solid #e5e5e5;
 
     &--name {
+      padding: 0;
+      margin-bottom: 10px;
       border: none;
       order: 1;
     }
 
     &--progress {
       order: 4;
+      // padding-top: 40px;
+      // padding-bottom: 0;
+      // margin-bottom: 57px;
     }
 
     &--contacts {
+      // padding-top: 40px;
+      // padding-bottom: 0;
+      // margin-bottom: 57px;
       order: 3;
     }
 
     &--apps {
       order: 2;
+      // padding-top: 40px;
+      // padding-bottom: 0;
+      // margin-bottom: 57px;
     }
 
     &--emotions {
@@ -73,16 +121,21 @@
   @media (min-width: $desktop-width) {
     width: 100%;
 
-    &--name,
+    &--name {
+      width: 435px;
+      padding: 0;
+    }
+
     &--apps {
       width: 435px;
+      padding: 50px 0;
     }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__fieldset-wrapper {
-    padding: 45px 58px;
+.form__fieldset-wrapper {
+  @media (min-width: $desktop-width) {
+    // padding: 45px 58px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,6 +143,7 @@
     &--name {
       height: 100%;
       padding: 0;
+      padding-top: 12px;
     }
 
     &--row {
@@ -102,9 +156,13 @@
 @media (min-width: $tablet-width) {
   .form__input-wrapper {
     width: 100%;
+    margin-bottom: 50px;
     display: flex;
+    align-items: baseline;
 
     &--full-length {
+      margin-bottom: 35px;
+      position: relative;
       flex-wrap: wrap-reverse;
     }
   }
@@ -121,24 +179,45 @@
 .form__label {
   display: block;
   padding: 0 23px;
+  padding-right: 23px;
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 30px;
   color: $red;
   text-transform: uppercase;
+
+  &--name {
+    padding: 0;
+    padding-right: 23px;
+  }
 }
 
 .form__legend {
+  position: absolute;
+  // display: block;
+  top: 40px;
+  width: 87.5%;
+  margin: 0;
+  padding: 0;
+  // padding-top: 70px;
   font-size: 14px;
   line-height: 18px;
   color: $red;
   text-align: center;
   text-transform: uppercase;
 
+  &--emotions {
+    top: 20px;
+  }
+
   &--contacts {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    position: static;
     padding: 0 32px;
     background-color: $white;
 
@@ -150,13 +229,44 @@
 
 .form__input {
   width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $black;
+  border: 2px solid #e5e5e5;
   flex-grow: 2;
+
+  &--textarea {
+    height: 197px;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-blue;
+  }
+
+  &::-moz-placeholder {
+    color: $dark-blue;
+  }
+
+  &:-moz-placeholder {
+    color: $dark-blue;
+  }
+
+  &:-ms-input-placeholder {
+    color: $dark-blue;
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin: 0;
 
     &--full-length {
       width: 100%;
+    }
+
+    &--textarea {
+      margin-bottom: 45px;
     }
   }
 }
@@ -164,10 +274,11 @@
 .form__checkbox {
   position: relative;
   display: block;
-  margin: 21px auto;
+  margin: 0 auto;
+  margin-bottom: 42px;
   padding-left: 70px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 40px;
   color: $dark-blue;
   cursor: pointer;
 
@@ -177,7 +288,7 @@
   }
 
   &:active .form__checkbox-indicator {
-    border-color: $hover-red;
+    border-color: $red;
   }
 
   @media (min-width: $tablet-width) {
@@ -196,7 +307,7 @@
   top: 0;
   width: 39px;
   height: 39px;
-  background-color: transparent;
+  background-color: $white;
   border: 2px solid #e5e5e5;
 
   &--radio {
@@ -204,27 +315,52 @@
   }
 }
 
-.form__radio {
-  position: relative;
-  margin: 21px 0;
-  display: block;
-  padding-left: 70px;
-  font-size: 18px;
-  line-height: 30px;
-  color: $dark-blue;
-  cursor: pointer;
+input[type="checkbox"]:checked + .form__checkbox-indicator {
+  background-color: red;//временно
+}
+
+input[type="radio"]:checked + .form__checkbox-indicator {
+  background-color: red;//временно
+}
+
+// .form__radio {
+//   position: relative;
+//   margin: 0 auto;
+//   margin-bottom: 39px;
+//   padding-left: 70px;
+//   display: block;
+//   font-size: 18px;
+//   line-height: 30px;
+//   color: $dark-blue;
+//   cursor: pointer;
+// }
+
+.form__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: block;
+    width: 59px;
+    height: 59px;
+    background-color: #e5e5e5;
+  }
 }
 
 .form__button-area {
   width: 100%;
-  padding: 20px 0;
   text-align: center;
   order: 999;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: left;
+    padding: 10px 0;
   }
 }
 
@@ -240,9 +376,26 @@
   color: $white;
   background-color: #2aab6d;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: $white;
+  }
 }
 
 .form__footnote {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;

@@ -1,53 +1,220 @@
 .upload {
   width: 100%;
+  padding-top: 30px;
   color: $dark-blue;
   background-color: $white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-container;
+    padding-top: 48px;
+  }
 }
 
 .upload__call {
   margin: 0;
-  padding: 0;
+  margin-bottom: 40px;
+  padding: 0 20px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $dark-blue;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .upload__wrapper {
   @include mobile-container;
+  // width: 100%;
+  padding-top: 20px;
   background-color: $grey;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
     padding-top: 57px;
     padding-bottom: 57px;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    @include desktop-container;
-    padding-top: 57px;
-    padding-bottom: 57px;
-    background-color: $white;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .upload__form {
+.upload__form {
+  @media (min-width: $tablet-width) {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    background-color: $grey;
+    flex-wrap: wrap;
+  }
+}
+
+.upload__img {
+  @media (min-width: $tablet-width) {
+    margin-right: 83px;
+  }
+}
+
+.upload__edit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.upload__icon {
+  opacity: 0.3;
+
+  svg {
+    width: 60px;
+    fill: $dark-blue;
   }
 
-  .upload__edit {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &--active {
+    opacity: 1;
+
+    svg {
+      fill: $red;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+
+    svg {
+      width: 25px;
+      fill: $red;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 47px;
+
+    svg {
+      width: 45px;
+    }
+  }
+}
+
+.upload__instrument {
+  margin: 30px 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
     display: flex;
+    margin: 0;
+    border-bottom: 1px solid #dddfe0;
+  }
+}
+
+.upload__range-controls {
+  display: none;
+  width: 100%;
+  position: relative;
+  padding-bottom: 34px;
+  margin-bottom: 38px;
+
+  &--common {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 150%;
+      margin-left: -20%;
+      background-color: #dddfe0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: none;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    padding-top: 19px;
+
+    &--common {
+      display: none;
+    }
+  }
+}
+
+.upload__range-scale {
+  margin: 0 auto;
+  width: 100%;
+  height: 2px;
+  background-color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.upload__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 200px;
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border: 2px solid $red;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $red;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+  }
+}
+
+.upload__button-wrapper {
+  width: 100%;
+  align-self: flex-end;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .upload__button {
-  width: 280px;
+  width: 100%;
   padding: 12px 0;
+  margin-bottom: 12px;
   font: inherit;
   font-size: 18px;
   line-height: 18px;
@@ -58,10 +225,44 @@
 
   &--submit {
     color: $red;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $red;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
   &--reset {
-    color: #dddfe0;
-    border-color: #dddfe0;
+    margin-bottom: 40px;
+    color: $dark-blue;
+    border-color: $dark-blue;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: rgba($white, 0.3);
+      background-color: $dark-blue;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--reset {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin: 0;
   }
 }

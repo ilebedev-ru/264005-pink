@@ -1,18 +1,23 @@
 .user-photo {
   @include mobile-container;
   background-color: $white;
+  padding-top: 45px;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
+    padding-top: 90px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
+    padding-top: 90px;
   }
 }
 
 .user-photo__call {
   margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -20,6 +25,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
   }
 }
 
