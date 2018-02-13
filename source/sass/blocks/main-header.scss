@@ -7,10 +7,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 1400px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/bg-back-tablet@1x.jpg");
+    background-color: $darken-blue;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 2400px auto;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: url("../img/bg-back-desktop@1x.jpg");
+    background-color: $darken-blue;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 5120px auto;
+    }
   }
 }
 
