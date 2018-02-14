@@ -37,7 +37,6 @@
 
 .upload__wrapper {
   @include mobile-container;
-  // width: 100%;
   padding-top: 20px;
   background-color: $grey;
   overflow: hidden;
@@ -65,7 +64,7 @@
 
 .upload__img {
   @media (min-width: $tablet-width) {
-    margin-right: 83px;
+    margin-right: 48px;
   }
 }
 
@@ -79,6 +78,72 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.upload__edit-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+  }
+}
+
+.upload__range-area {
+  display: block;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    flex-grow: 2;
+  }
+}
+
+.upload__range-controls {
+  display: none;
+  width: 100%;
+  position: relative;
+  padding-bottom: 34px;
+  margin-bottom: 38px;
+
+  &--active {
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 150%;
+    margin-left: -20%;
+    background-color: #dddfe0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: none;
+    margin: 0;
+    margin-bottom: 23px;
+    padding: 0;
+    padding-top: 23px;
+
+    &::after {
+      width: 100%;
+      bottom: -23px;
+      margin-left: 0;
+    }
   }
 }
 
@@ -105,6 +170,7 @@
 
   @media (min-width: $tablet-width) {
     opacity: 1;
+    height: 47px;
 
     svg {
       width: 25px;
@@ -129,44 +195,6 @@
     display: flex;
     margin: 0;
     border-bottom: 1px solid #dddfe0;
-  }
-}
-
-.upload__range-controls {
-  display: none;
-  width: 100%;
-  position: relative;
-  padding-bottom: 34px;
-  margin-bottom: 38px;
-
-  &--common {
-    display: block;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      width: 150%;
-      margin-left: -20%;
-      background-color: #dddfe0;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    border: none;
-    margin: 0;
-    margin-bottom: 24px;
-    padding: 0;
-    padding-top: 19px;
-
-    &--common {
-      display: none;
-    }
   }
 }
 
@@ -197,7 +225,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 13px;
+    top: 17px;
+    left: 100px;
   }
 }
 
