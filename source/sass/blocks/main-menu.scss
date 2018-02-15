@@ -92,6 +92,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
 
   &--nojs {
     display: none;
@@ -181,16 +182,16 @@
   padding: 0;
   list-style: none;
 
-  &--open {
-    display: block;
-  }
-
   @media (min-width: $desktop-width) {
     width: auto;
     max-width: 790px;
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.main-menu--open .main-menu__list {
+  display: block;
 }
 
 .main-menu__item {
