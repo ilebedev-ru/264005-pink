@@ -148,7 +148,12 @@
 }
 
 .upload__icon {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
   opacity: 0.3;
+  cursor: pointer;
 
   svg {
     width: 60px;

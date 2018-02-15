@@ -2,7 +2,7 @@
   width: 100%;
   background-color: rgba($black, 0.3);
 
-  &--nojs {
+  &--open {
     background-color: $dark-blue;
     border-bottom: 1px solid $black;
 
@@ -36,6 +36,50 @@
   }
 }
 
+.main-menu__logo-icon {
+  display: block;
+  fill: $white;
+
+  &:hover,
+  &:focus {
+    fill: $red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
 .main-menu__button {
   position: relative;
   display: block;
@@ -48,6 +92,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
 
   &::before {
     content: "";
@@ -133,7 +181,7 @@
   padding: 0;
   list-style: none;
 
-  &--nojs {
+  &--open {
     display: block;
   }
 
