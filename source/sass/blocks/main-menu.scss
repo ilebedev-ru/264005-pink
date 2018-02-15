@@ -36,6 +36,50 @@
   }
 }
 
+.main-menu__logo-icon {
+  display: block;
+  fill: $white;
+
+  &:hover,
+  &:focus {
+    fill: $red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
 .main-menu__button {
   position: relative;
   display: block;

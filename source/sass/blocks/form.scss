@@ -316,24 +316,41 @@
 }
 
 input[type="checkbox"]:checked + .form__checkbox-indicator {
-  background-color: red;//временно
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: red;
+  }
+
+  &::before {
+    top: 20px;
+    left: 6px;
+    width: 10px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 17px;
+    left: 11px;
+    width: 20px;
+    transform: rotate(-45deg);
+  }
 }
 
 input[type="radio"]:checked + .form__checkbox-indicator {
-  background-color: red;//временно
+  &::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 10px auto;
+    background-color: red;
+    border-radius: 50%;
+  }
 }
-
-// .form__radio {
-//   position: relative;
-//   margin: 0 auto;
-//   margin-bottom: 39px;
-//   padding-left: 70px;
-//   display: block;
-//   font-size: 18px;
-//   line-height: 30px;
-//   color: $dark-blue;
-//   cursor: pointer;
-// }
 
 .form__icon {
   display: none;
@@ -344,8 +361,8 @@ input[type="radio"]:checked + .form__checkbox-indicator {
     top: 2px;
     right: 2px;
     display: block;
-    width: 59px;
-    height: 59px;
+    width: 60px;
+    height: 60px;
     background-color: #e5e5e5;
     background-repeat: no-repeat;
     background-size: auto;

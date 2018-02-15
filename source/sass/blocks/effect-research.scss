@@ -4,7 +4,6 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 100%;
-    // background: url("../img/bg-back-mobile@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
@@ -17,20 +16,61 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 59px;
     padding-bottom: 59px;
-    padding-left: 300px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
     padding-top: 59px;
     padding-bottom: 59px;
-    padding-left: 380px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .effect-research__diagram {
+    display: block;
+    flex-shrink: 0;
+    width: 240px;
+    height: 276px;
+    padding-top: 75px;
+    margin-right: 70px;
+    color: $red;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+    text-align: center;
+    background:
+      url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-repeat:
+      no-repeat,
+      no-repeat;
+    background-size:
+      202px auto,
+      239px auto;
+    background-position:
+      50% 55px,
+      0 0;
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+      height: 345px;
+      padding-top: 89px;
+      font-size: 120px;
+      line-height: 187px;
+      background-size:
+        253px auto,
+        299px auto;
+      background-position:
+        50% 69px,
+        0 0;
+    }
+  }
+
   .effect-research__title {
     margin: 0;
     padding: 0;
@@ -48,7 +88,7 @@
     }
   }
 
-  .effect-research__desc {
+  .effect-research__text {
     margin: 0;
     padding: 0;
     font-size: 14px;
