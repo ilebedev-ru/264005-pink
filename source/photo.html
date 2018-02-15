@@ -47,8 +47,8 @@
         </div>
       </header>
 
-      <main class="photo-page">
-        <section class="user-photo">
+      <main class="user-photo">
+        <section class="user-photo__area">
           <h2 class="visually-hidden">Лента фотографий пользователей</h2>
           <p class="user-photo__call">Вгзляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?
           </p>
@@ -295,12 +295,12 @@
         <div class="footer-bottom">
           <div class="footer-bottom__logo">
             <a href="index.html">
-              <svg class="footer-bottom__logo-icon footer-bottom__logo-icon--tablet" width="146" height="40" aria-labelledby="footer-logo">
-                <title id="footer-logo">Логотип Pink</title>
+              <svg class="footer-bottom__logo-icon footer-bottom__logo-icon--tablet" width="146" height="40" aria-labelledby="footer-logo-mobile">
+                <title id="footer-logo-mobile">Логотип Pink</title>
                 <use xlink:href="../img/sprite.svg#logo-tablet-blue"></use>
               </svg>
-              <svg class="footer-bottom__logo-icon footer-bottom__logo-icon--desktop" width="146" height="40" aria-labelledby="footer-logo">
-                <title id="footer-logo">Логотип Pink</title>
+              <svg class="footer-bottom__logo-icon footer-bottom__logo-icon--desktop" width="146" height="40" aria-labelledby="footer-logo-desktop">
+                <title id="footer-logo-desktop">Логотип Pink</title>
                 <use xlink:href="../img/sprite.svg#logo-desktop-blue"></use>
               </svg>
             </a>
@@ -338,5 +338,7 @@
           </div>
         </div>
       </footer>
+      <script src="js/script.js"></script>
+      <script defer src="js/picturefill.min.js"></script>
     </body>
 </html>

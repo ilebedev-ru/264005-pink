@@ -1,8 +1,11 @@
 .user-photo {
+  overflow-x: hidden;
+}
+
+.user-photo__area {
   @include mobile-container;
   background-color: $white;
   padding-top: 45px;
-  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
