@@ -1,6 +1,5 @@
 .footer-bottom {
   @include mobile-container;
-  padding-top: 40px;
   padding-bottom: 40px;
 
   &--index {
@@ -29,7 +28,7 @@
 }
 
 .footer-bottom__logo {
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 }
 
 .footer-bottom__logo-icon {

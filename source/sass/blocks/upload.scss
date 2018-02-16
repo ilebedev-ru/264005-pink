@@ -75,6 +75,7 @@
   align-items: center;
   width: 100%;
   padding: 0 20px;
+  padding-top: 6px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -193,7 +194,7 @@
 }
 
 .upload__instrument {
-  margin: 30px 10px;
+  margin: 31px 10px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -247,7 +248,7 @@
 
 .upload__button {
   width: 100%;
-  padding: 12px 0;
+  padding: 15px 0;
   margin-bottom: 12px;
   font: inherit;
   font-size: 18px;
@@ -255,7 +256,7 @@
   font-weight: bold;
   background-color: $grey;
   border: 3px solid $red;
-  border-radius: 20px;
+  border-radius: 25px;
 
   &--submit {
     color: $red;

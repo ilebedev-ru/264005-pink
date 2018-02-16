@@ -56,7 +56,9 @@
   right: 0;
   display: block;
   width: 140px;
-  padding: 8px 19px;
+  padding: 0 19px;
+  padding-top: 5px;
+  padding-bottom: 8px;
   background-color: $red;
   color: $white;
   font-size: 12px;
@@ -66,7 +68,7 @@
 }
 
 .photocard__info {
-  padding: 13px 18px;
+  padding: 12px 18px;
   margin: 0;
   width: 100%;
   background-color: $grey;
@@ -86,6 +88,7 @@
 .photocard__author {
   margin: 0;
   padding: 0;
+  // padding-top: 3px;
   font-weight: 700;
   font-style: normal;
   order: 1;
@@ -106,21 +109,25 @@
 
 .photocard__desc {
   width: 100%;
-  min-height: 55px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
   font-weight: 400;
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    min-height: 55px;
+  }
 }
 
 .photocard__like {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding: 0;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $red;
   order: 4;
 
