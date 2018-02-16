@@ -8,7 +8,7 @@
   background-size: 100%;
 
   &--open {
-    background-position: center;
+    background-position: center 280px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
