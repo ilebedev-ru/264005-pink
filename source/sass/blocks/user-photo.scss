@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
-    padding-top: 90px;
+    padding-top: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,11 +29,19 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-bottom: 65px;
+    padding: 0 30px;
+    margin-bottom: 75px;
+
+    br {
+      display: none;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -47,6 +55,8 @@
 }
 
 .user-photo__item {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 21px;
+
+
 }

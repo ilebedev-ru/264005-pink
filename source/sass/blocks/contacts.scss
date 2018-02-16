@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {

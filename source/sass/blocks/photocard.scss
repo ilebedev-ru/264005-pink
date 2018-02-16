@@ -19,14 +19,19 @@
 
     &--of-the-day {
       width: 100%;
+      margin-bottom: 52px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 32%;
+    margin-bottom: 60px;
+    padding-bottom: 12px;
 
     &--of-the-day {
       width: 100%;
+      margin-bottom: 52px;
+      padding-bottom: 0px;
     }
   }
 }
@@ -47,6 +52,18 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+
+    @media (min-width: $tablet-width) {
+      width: 106vw;
+      margin-left: -53vw;
+      margin-right: -53vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 125vw;
+      margin-left: -62.5vw;
+      margin-right: -62.5vw;
+    }
   }
 }
 
@@ -65,6 +82,14 @@
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+  }
 }
 
 .photocard__info {
@@ -74,8 +99,17 @@
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
+    padding-right: 11px;
+    padding-left: 27px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
+
+    &--of-the-day {
+      margin-bottom: 0;
+    }
 
     &--of-the-day .photocard__like {
       order: 2;
@@ -83,12 +117,16 @@
       margin-left: auto;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    margin-bottom: 0;
+  }
 }
 
 .photocard__author {
   margin: 0;
   padding: 0;
-  // padding-top: 3px;
   font-weight: 700;
   font-style: normal;
   order: 1;
@@ -118,6 +156,18 @@
   @media (min-width: $tablet-width) {
     min-height: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    // padding-bottom: 10px;
+  }
+}
+
+.photocard__info--of-the-day .photocard__desc {
+    min-height: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
 }
 
 .photocard__like {
