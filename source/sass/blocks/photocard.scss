@@ -19,14 +19,19 @@
 
     &--of-the-day {
       width: 100%;
+      margin-bottom: 52px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 30%;
+    width: 32%;
+    margin-bottom: 60px;
+    padding-bottom: 12px;
 
     &--of-the-day {
       width: 100%;
+      margin-bottom: 52px;
+      padding-bottom: 0px;
     }
   }
 }
@@ -47,6 +52,18 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+
+    @media (min-width: $tablet-width) {
+      width: 106vw;
+      margin-left: -53vw;
+      margin-right: -53vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 125vw;
+      margin-left: -62.5vw;
+      margin-right: -62.5vw;
+    }
   }
 }
 
@@ -56,30 +73,54 @@
   right: 0;
   display: block;
   width: 140px;
-  padding: 8px 19px;
+  padding: 0 19px;
+  padding-top: 5px;
+  padding-bottom: 8px;
   background-color: $red;
   color: $white;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+  }
 }
 
 .photocard__info {
-  padding: 13px 18px;
+  padding: 12px 18px;
   margin: 0;
   width: 100%;
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
+    padding-right: 11px;
+    padding-left: 27px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
+
+    &--of-the-day {
+      margin-bottom: 0;
+    }
 
     &--of-the-day .photocard__like {
       order: 2;
       width: auto;
       margin-left: auto;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    margin-bottom: 0;
   }
 }
 
@@ -106,21 +147,37 @@
 
 .photocard__desc {
   width: 100%;
-  min-height: 55px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
   font-weight: 400;
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    min-height: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-bottom: 10px;
+  }
+}
+
+.photocard__info--of-the-day .photocard__desc {
+    min-height: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
 }
 
 .photocard__like {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding: 0;
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $red;
   order: 4;
 

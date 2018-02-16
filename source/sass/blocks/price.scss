@@ -1,16 +1,25 @@
 .price {
   width: 100%;
   background-color: $white;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0px;
+  }
 }
 
 .price__wrapper {
-  padding-top: 90px;
+  padding-top: 88px;
   background: url("../img/bg-triangle-white.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: $grey;
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+  }
 }
 
 .price__table {
@@ -44,6 +53,10 @@
 .price__cell {
   position: relative;
   padding: 15px 22px;
+  background: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 93% 50%;
   background-color: $white;
   overflow: hidden;
 
@@ -58,38 +71,31 @@
   }
 
   &--header {
-    padding: 18px 22px;
+    padding: 0 22px;
+    padding-top: 19px;
+    padding-bottom: 21px;
     color: $white;
+    background-image: none;
     background-color: $darken-blue;
-  }
-
-  &--on {
-    background: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 95% 50%;
-    background-color: $white;
   }
 
   &--off {
     background: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 95% 50%;
+    background-position: 92% 50%;
     background-color: $white;
   }
 
   @media (min-width: $tablet-width) {
     min-width: 154px;
-    padding: 7px 18px;
+    padding: 8px 18px;
+    background-position: 50% 50%;
 
     &--first {
       display: block;
-    }
-
-    &--on,
-    &--off {
-      background-position: 50% 50%;
+      padding-left: 15px;
+      background-image: none;
     }
 
     &--none {
@@ -100,7 +106,14 @@
 
   @media (min-width: $desktop-width) {
     min-width: 235px;
-    padding: 14px 24px;
+    padding: 0 24px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+
+    &--header {
+      padding-top: 16px;
+      padding-bottom: 20px;
+    }
   }
 }
 
@@ -124,8 +137,8 @@
 
 .price__hit {
   position: absolute;
-  top: 10px;
-  left: -35px;
+  top: 12px;
+  left: -37px;
   width: 120px;
   background-color: #d22856;
   font-size: 14px;
@@ -137,6 +150,11 @@
   @media (min-width: $tablet-width) {
     top: 2px;
     left: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    left: -37px;
   }
 }
 
@@ -171,7 +189,7 @@
       display: block;
       text-transform: none;
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $desktop-width) {
         font-size: 18px;
       }
     }

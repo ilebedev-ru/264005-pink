@@ -18,15 +18,14 @@
     @include tablet-container;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     padding-top: 59px;
     padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
-    padding-top: 59px;
-    padding-bottom: 59px;
+    padding-bottom: 69px;
   }
 }
 
@@ -59,7 +58,8 @@
     @media (min-width: $desktop-width) {
       width: 300px;
       height: 345px;
-      padding-top: 89px;
+      margin-right: 67px;
+      padding-top: 97px;
       font-size: 120px;
       line-height: 187px;
       background-size:
@@ -71,8 +71,17 @@
     }
   }
 
+  .effect-research__desc {
+    padding-top: 35px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 95px;
+    }
+  }
+
   .effect-research__title {
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     font-size: 30px;
     line-height: 36px;
@@ -81,6 +90,7 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 25px;
+      line-height: 30px;
 
       br {
         display: none;
@@ -91,9 +101,15 @@
   .effect-research__text {
     margin: 0;
     padding: 0;
+    color: $dark-blue;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
 
     &--link {
       display: block;
@@ -101,7 +117,7 @@
       color: $red;
 
       @media (min-width: $desktop-width) {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
   }
