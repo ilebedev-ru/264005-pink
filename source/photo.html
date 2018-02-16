@@ -7,26 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
     <body>
+      <div style="display:none">
+        <include src="build/img/sprite.svg"></include>
+      </div>
       <header class="main-header main-header--open">
         <nav class="main-menu main-menu--open">
           <div class="main-menu__upbox">
             <div class="main-menu__logo">
               <a href="index.html">
-                <svg class="main-menu__logo-icon" width="74" height="23">
-                  <use xlink:href="../img/sprite.svg#logo-mobile-white"></use>
+                <svg class="main-menu__logo-icon" width="74" height="23" aria-labelledby="main-logo">
+                  <title id="main-logo">Логотип Pink</title>
+                  <use xlink:href="#logo-pink-white-mobile"></use>
                 </svg>
-                <svg class="main-menu__logo-icon main-menu__logo-icon--tablet" width="146" height="40">
-                  <use xlink:href="../img/sprite.svg#logo-tablet-white"></use>
+                <svg class="main-menu__logo-icon main-menu__logo-icon--tablet" width="146" height="40" ria-labelledby="main-logo">
+                  <title id="main-logo">Логотип Pink</title>
+                  <use xlink:href="#logo-pink-white-tablet"></use>
                 </svg>
-                <svg class="main-menu__logo-icon main-menu__logo-icon--desktop" width="146" height="40">
-                  <use xlink:href="../img/sprite.svg#logo-desktop-white"></use>
+                <svg class="main-menu__logo-icon main-menu__logo-icon--desktop" width="146" height="40" ria-labelledby="main-logo">
+                  <title id="main-logo">Логотип Pink</title>
+                  <use xlink:href="#logo-pink-white-desktop"></use>
                 </svg>
               </a>
             </div>
             <button class="main-menu__button main-menu__button--nojs" type="button">
               <span class="visually-hidden">Кнопка меню</span>
             </button>
-            <ul class="main-menu__list main-menu__list--nojs">
+            <ul class="main-menu__list">
               <li class="main-menu__item">
                 <a class="main-menu__link" href="index.html">Главная</a>
               </li>
@@ -245,7 +251,7 @@
                   <div class="upload__instrument upload__instrument--crop">
                     <button type="button" class="upload__icon upload__icon--active">
                       <svg width="48px" height="48px">
-                        <use xlink:href="../img/sprite.svg#upload-crop"></use>
+                        <use xlink:href="#icon-editor-crop"></use>
                       </svg>
                       <span class="visually-hidden">Обрезать</span>
                     </button>
@@ -253,7 +259,7 @@
                   <div class="upload__instrument upload__instrument--brightness">
                     <button type="button" class="upload__icon">
                       <svg width="48px" height="48px">
-                        <use xlink:href="../img/sprite.svg#upload-brighness"></use>
+                        <use xlink:href="#icon-editor-fill"></use>
                       </svg>
                       <span class="visually-hidden">Заливка</span>
                     </button>
@@ -261,7 +267,7 @@
                   <div class="upload__instrument upload__instrument--contrast">
                     <button type="button" class="upload__icon">
                       <svg width="32px" height="35px">
-                        <use xlink:href="../img/sprite.svg#upload-contrast"></use>
+                        <use xlink:href="#icon-editor-contrast"></use>
                       </svg>
                       <span class="visually-hidden">Контраст</span>
                     </button>
@@ -297,11 +303,11 @@
             <a href="index.html">
               <svg class="footer-bottom__logo-icon footer-bottom__logo-icon--tablet" width="146" height="40" aria-labelledby="footer-logo-mobile">
                 <title id="footer-logo-mobile">Логотип Pink</title>
-                <use xlink:href="../img/sprite.svg#logo-tablet-blue"></use>
+                <use xlink:href="#logo-pink-blue-mobile"></use>
               </svg>
               <svg class="footer-bottom__logo-icon footer-bottom__logo-icon--desktop" width="146" height="40" aria-labelledby="footer-logo-desktop">
                 <title id="footer-logo-desktop">Логотип Pink</title>
-                <use xlink:href="../img/sprite.svg#logo-desktop-blue"></use>
+                <use xlink:href="#logo-pink-blue-desktop"></use>
               </svg>
             </a>
           </div>
@@ -332,13 +338,13 @@
             <a href="https://htmlacademy.ru/intensive/adaptive">
               <svg class="footer-bottom__copyright-icon" width="27" height="34" aria-labelledby="copyright">
                 <title id="copyright">Html Academy</title>
-                <use xlink:href="../img/sprite.svg#copyright"></use>
+                <use xlink:href="#logo-pink-htmlacademy"></use>
               </svg>
             </a>
           </div>
         </div>
       </footer>
-      <script src="js/script.js"></script>
-      <script defer="" src="js/picturefill.min.js"></script>
+      <script src="js/script-inner.js"></script>
+      <script src="js/picturefill.min.js"></script>
     </body>
 </html>

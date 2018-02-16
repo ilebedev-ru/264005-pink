@@ -20,6 +20,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+  }
+
   @media (min-width: $desktop-width) {
     @include desktop-container;
     padding-top: 27px;
@@ -94,7 +98,12 @@
   cursor: pointer;
   outline: none;
 
-  &--nojs {
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 
@@ -107,6 +116,18 @@
     height: 4px;
     background-color: $white;
     box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  }
+
+  &--nojs {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 41px;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   &:hover,
@@ -128,18 +149,23 @@
     position: relative;
     width: 24px;
     height: 24px;
-    margin-bottom: 28px;
+    margin-right: 23px;
+    margin-bottom: 24px;
     background-color: transparent;
     box-shadow: none;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 41px;
+    }
 
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 12px;
+      top: 10px;
       left: 0;
-      width: 24px;
-      height: 3px;
+      width: 30px;
+      height: 5px;
       background-color: $white;
     }
 
@@ -169,10 +195,6 @@
       }
     }
   }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .main-menu__list {
@@ -192,6 +214,10 @@
 
 .main-menu--open .main-menu__list {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .main-menu__item {
@@ -208,7 +234,9 @@
 .main-menu__link {
   display: block;
   width: 100%;
-  padding: 16px 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 32px;
   color: inherit;
@@ -228,8 +256,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 21px;
-    margin-bottom: 34px;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    margin-bottom: 33px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
