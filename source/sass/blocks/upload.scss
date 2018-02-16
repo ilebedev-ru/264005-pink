@@ -197,7 +197,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // height: 48px;
     margin-right: 47px;
 
     svg {
@@ -326,11 +325,6 @@
   @media (min-width: $desktop-width) {
     width: 183px;
     margin: 0;
-    // margin-right: 10px;
     margin-bottom: 7px;
-
-    // &--reset {
-    //   margin-left: 10px;
-    // }
   }
 }

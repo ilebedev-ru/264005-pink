@@ -5,7 +5,6 @@
 
 .contacts__wrapper {
   @include mobile-container;
-  // padding-top: 40px;
   padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {

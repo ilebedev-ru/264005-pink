@@ -119,7 +119,6 @@
 
     &--contacts {
       order: 3;
-      // margin-bottom: 40px;
     }
 
     &--apps {
@@ -163,7 +162,6 @@
 
 .form__fieldset-wrapper {
   @media (min-width: $desktop-width) {
-    // padding: 45px 58px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,7 +175,6 @@
     &--row {
       flex-direction: row;
       flex-wrap: wrap;
-      // margin-bottom: 10px;
     }
   }
 }
@@ -209,7 +206,6 @@
 .form__label {
   display: block;
   padding: 0 23px;
-  margin-left: 23px;
   margin: 0;
   margin-bottom: 5px;
   font-size: 14px;
@@ -223,21 +219,15 @@
       padding: 0;
       padding-right: 20px;
     }
-
-    // &--contacts {
-    //   margin-top: 8px;
-    // }
   }
 }
 
 .form__legend {
   position: absolute;
-  // display: block;
   top: 40px;
   width: 87.5%;
   margin: 0;
   padding: 0;
-  // padding-top: 70px;
   font-size: 14px;
   line-height: 18px;
   color: $red;
@@ -261,10 +251,6 @@
     &--contacts {
       display: block;
     }
-
-    @media (min-width: $desktop-width) {
-      // padding: 0;
-    }
   }
 }
 
@@ -282,7 +268,7 @@
     height: 202px;
 
     @media (min-width: $desktop-width) {
-    height: 125px;
+      height: 125px;
     }
   }
 
@@ -496,7 +482,7 @@ input[type="radio"]:checked + .form__checkbox-indicator {
     width: 300px;
   }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 
