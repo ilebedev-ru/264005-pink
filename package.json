@@ -46,7 +46,5 @@
   "engines": {
     "node": "8.9"
   },
-  "dependencies": {
-    "svgxuse": "^1.2.6"
-  }
+  "dependencies": {}
 }

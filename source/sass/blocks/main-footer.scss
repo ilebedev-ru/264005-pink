@@ -1,8 +1,17 @@
 .main-footer {
   width: 100%;
+  padding-top: 42px;
   text-align: center;
   color: $dark-blue;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+  }
 }
 
 .main-footer__map {
@@ -11,6 +20,11 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
+
+  // iframe {
+  //   width: 100%;
+  //   height: 200px;
+  // }
 
   &--nojs iframe {
     display: none;

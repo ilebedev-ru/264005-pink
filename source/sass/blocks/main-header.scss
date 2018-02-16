@@ -8,7 +8,7 @@
   background-size: 100%;
 
   &--open {
-    background-position: center 280px;
+    background-position: center 260px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -21,9 +21,10 @@
     background-color: $darken-blue;
     background-size: 1200px auto;
     background-repeat: no-repeat;
+    background-position: center 0;
 
     &--open {
-      background-position: center 333px;
+      background-position: center 260px;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -70,7 +71,7 @@
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
-    padding-top: 93px;
+    padding-top: 99px;
 
     &--inner {
       padding-top: 63px;
