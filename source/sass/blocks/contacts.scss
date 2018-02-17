@@ -26,12 +26,12 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    // align-items: top;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
@@ -41,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    // margin-right: 3px;
     margin-bottom: 50px;
 
     &:last-child {

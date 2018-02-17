@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 65px;
+    // padding-top: 65px;
   }
 }
 
@@ -20,6 +20,7 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
+  background-color: #eae6dd;
 
   &--nojs iframe {
     display: none;
@@ -38,23 +39,73 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: transparent;
+    z-index: 3;
+  }
+
+  &--nojs {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 97px;
+      left: 50%;
+      margin-left: -18px;
+      width: 37px;
+      height: 37px;
+      border: 10px solid $white;
+      border-radius: 50%;
+      background-color: $red;
+
+      @media (min-width: $tablet-width) {
+        top: 195px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 260px;
+      }
+    }
+  }
+
+  iframe {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    border: none;
+    z-index: 2;
+  }
+
+  img {
+    width: 100%;
+    margin: 0 auto;
+    height: 645px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {
     height: 375px;
+
+    img {
+      height: 848px;
+      bottom: -130px;
+    }
+
+    iframe {
+      height: 374px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 500px;
+
+    img {
+      height: 967px;
+      bottom: -190px;
+    }
+
+    iframe {
+      height: 500px;
+    }
   }
-}
-
-.main-footer__map iframe {
-  width: 100%;
-  border: none;
-}
-
-.main-footer__map img {
-  width: 100%;
-  height: auto;
 }

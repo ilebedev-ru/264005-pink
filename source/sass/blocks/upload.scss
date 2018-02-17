@@ -1,16 +1,17 @@
 .upload {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   color: $dark-blue;
   background-color: $white;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 54px;
+    padding-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
+    padding-top: 7px;
   }
 }
 
@@ -50,6 +51,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 80px;
     padding-right: 60px;
+    padding-bottom: 55px;
   }
 }
 
@@ -84,6 +86,10 @@
     padding: 0;
     align-items: flex-start;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-bottom: 5px;
+  // }
 }
 
 .upload__edit-icons {
@@ -151,6 +157,11 @@
       margin-left: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    margin-bottom: 50px;
+  }
 }
 
 .upload__icon {
@@ -201,6 +212,14 @@
 
     svg {
       width: 48px;
+      height: 48px;
+    }
+
+    &--contrast {
+      svg {
+        width: 48px;
+        height: 33px;
+      }
     }
   }
 }
@@ -218,6 +237,15 @@
     &--brightness,
     &--contrast {
       padding-top: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+
+    &--brightness,
+    &--contrast {
+      padding-bottom: 22px;
     }
   }
 }
@@ -251,6 +279,10 @@
   @media (min-width: $tablet-width) {
     top: 12px;
     left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
   }
 }
 
@@ -325,6 +357,5 @@
   @media (min-width: $desktop-width) {
     width: 183px;
     margin: 0;
-    margin-bottom: 7px;
   }
 }
