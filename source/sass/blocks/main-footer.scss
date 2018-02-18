@@ -38,26 +38,24 @@
     z-index: 3;
   }
 
-  &--nojs {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 97px;
-      left: 50%;
-      margin-left: -18px;
-      width: 37px;
-      height: 37px;
-      border: 10px solid $white;
-      border-radius: 50%;
-      background-color: $red;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 97px;
+    left: 50%;
+    margin-left: -18px;
+    width: 37px;
+    height: 37px;
+    border: 10px solid $white;
+    border-radius: 50%;
+    background-color: $red;
 
-      @media (min-width: $tablet-width) {
-        top: 195px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 195px;
+    }
 
-      @media (min-width: $desktop-width) {
-        top: 260px;
-      }
+    @media (min-width: $desktop-width) {
+      top: 260px;
     }
   }
 
