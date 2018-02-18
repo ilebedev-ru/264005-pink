@@ -66,7 +66,7 @@
 
 .upload__img {
   @media (min-width: $tablet-width) {
-    width: 300px;
+    max-width: 300px;
     margin-right: 48px;
     background-color: #8297bf;
     flex-grow: 0;
@@ -77,6 +77,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 300px;
     margin-right: 88px;
   }
 }
