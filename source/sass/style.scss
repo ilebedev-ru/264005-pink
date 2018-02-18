@@ -1,12 +1,12 @@
 @import "global/normalize.scss";
-// переменные
+// base
 @import "variables.scss";
 @import "global/mixins.scss";
-// глобальные стили
+// global
 @import "global/base.scss";
 @import "global/fonts.scss";
 @import "global/typo.scss";
-// стили главной страницы
+// index
 @import "blocks/main-header.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/download-app.scss";
@@ -18,10 +18,10 @@
 @import "blocks/main-footer.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer-bottom.scss";
-// стили страницы фото
+// photo
 @import "blocks/user-photo.scss";
 @import "blocks/photocard.scss";
 @import "blocks/upload.scss";
 @import "blocks/social-media.scss";
-// стили страницы форма
+// form
 @import "blocks/form.scss";

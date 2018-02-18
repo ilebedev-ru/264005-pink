@@ -60,7 +60,6 @@
 }
 
 .price__cell {
-  position: relative;
   padding: 15px 22px;
   background: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -81,6 +80,7 @@
   }
 
   &--header {
+    position: relative;
     padding: 0 22px;
     padding-top: 19px;
     padding-bottom: 21px;

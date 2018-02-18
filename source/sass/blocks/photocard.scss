@@ -25,12 +25,12 @@
 
   @media (min-width: $desktop-width) {
     width: 32%;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     padding-bottom: 12px;
 
     &--of-the-day {
       width: 100%;
-      margin-bottom: 52px;
+      margin-bottom: 50px;
       padding-bottom: 0;
     }
   }
@@ -40,9 +40,11 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #474644;
 
   img {
     width: 100%;
+    margin-bottom: -7px;
   }
 
   &--of-the-day {
@@ -93,7 +95,7 @@
 }
 
 .photocard__info {
-  padding: 10px 18px;
+  padding: 17px 18px;
   padding-bottom: 12px;
   margin: 0;
   width: 100%;
@@ -102,7 +104,7 @@
   @media (min-width: $tablet-width) {
     padding-right: 11px;
     padding-left: 27px;
-    padding-top: 17px;
+    padding-top: 24px;
     padding-bottom: 0;
     margin-bottom: 10px;
     display: flex;
@@ -110,6 +112,7 @@
 
     &--of-the-day {
       margin-bottom: 0;
+      padding-top: 26px;
       padding-bottom: 10px;
     }
 
@@ -122,7 +125,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 16px;
+    padding-top: 23px;
     margin-bottom: 0;
   }
 }
@@ -158,6 +161,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 55px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -174,10 +178,10 @@
 }
 
 .photocard__like {
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
   padding: 0;
+  margin-bottom: 12px;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
