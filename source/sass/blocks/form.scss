@@ -157,13 +157,12 @@
     }
 
     &--progress {
-      padding-bottom: 10px;
-      padding-right: 0;
-      padding-left: 0;
+      padding-bottom: 15px;
     }
 
     &--emotions {
-      margin-bottom: 60px;
+      padding-top: 35px;
+      margin-bottom: 65px;
     }
   }
 }
@@ -208,6 +207,12 @@
       width: 375px;
       margin-bottom: 10px;
     }
+  }
+}
+
+.form__fieldset-column {
+  @media (min-width: $desktop-width) {
+    max-width: 33%;
   }
 }
 
@@ -379,7 +384,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 260px;
+    // width: 260px;
     //margin: 0 auto;
 
     &--radio {
