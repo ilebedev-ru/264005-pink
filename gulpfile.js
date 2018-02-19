@@ -47,7 +47,11 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src(["source/img/logo-pink-*.svg", "source/img/icon-editor-*.svg"])
+  return gulp.src([
+    "source/img/logo-pink-*.svg",
+    "source/img/icon-editor-*.svg",
+    "source/img/icon-social-*.svg"
+    ])
     .pipe(svgstore({
       inlineSvg: true
     }))
