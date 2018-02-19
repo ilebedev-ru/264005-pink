@@ -268,10 +268,6 @@
     &--contacts {
       display: block;
     }
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -334,7 +330,7 @@
   }
 }
 
-.form__checkbox {
+.form__label-checkbox {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -387,30 +383,6 @@
     &--radio {
       width: 260px;
     }
-
-    &--selfi {
-      order: 1;
-    }
-
-    &--beach {
-      order: 4;
-    }
-
-    &--norris {
-      order: 2;
-    }
-
-    &--tower {
-      order: 3;
-    }
-
-    &--souvenirs {
-      order: 5;
-    }
-
-    &--hotel {
-      order: 6;
-    }
   }
 }
 
@@ -429,41 +401,44 @@
   }
 }
 
-input[type="checkbox"]:checked + .form__checkbox-indicator {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 2px;
-    background-color: red;
-  }
+.form__checkbox {
+  &:checked + .form__checkbox-indicator {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      background-color: $red;
+    }
 
-  &::before {
-    top: 20px;
-    left: 6px;
-    width: 10px;
-    transform: rotate(45deg);
-  }
+    &::before {
+      top: 20px;
+      left: 6px;
+      width: 10px;
+      transform: rotate(45deg);
+    }
 
-  &::after {
-    top: 17px;
-    left: 11px;
-    width: 20px;
-    transform: rotate(-45deg);
+    &::after {
+      top: 17px;
+      left: 11px;
+      width: 20px;
+      transform: rotate(-45deg);
+    }
   }
 }
 
-input[type="radio"]:checked + .form__checkbox-indicator {
-  &::before {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    margin: 10px auto;
-    background-color: red;
-    border-radius: 50%;
-  }
+.form__radio {
+  &:checked + .form__checkbox-indicator {
+    &::before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin: 10px auto;
+      background-color: $red;
+      border-radius: 50%;
+    }
 }
 
 .form__icon {
