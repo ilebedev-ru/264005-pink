@@ -87,12 +87,16 @@
     font-weight: 700;
     color: $black;
 
+    &--full-width {
+      display: block;
+    }
+
     @media (min-width: $desktop-width) {
       margin-bottom: 25px;
       line-height: 30px;
 
-      br {
-        display: none;
+      &--full-width {
+        display: inline;
       }
     }
   }

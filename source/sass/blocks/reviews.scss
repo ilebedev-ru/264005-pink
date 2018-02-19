@@ -11,13 +11,13 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
-    padding-top: 40px;
+    padding-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
-    padding-top: 185px;
-    margin-bottom: 40px;
+    padding-top: 180px;
+    margin-bottom: 60px;
     background: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 72px;

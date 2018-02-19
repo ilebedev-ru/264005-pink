@@ -15,7 +15,7 @@
 
 .features__desc {
   @include mobile-container;
-  padding-bottom: 10px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
@@ -30,15 +30,19 @@
 
 .features__slogan {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   padding: 0;
   font-size: $fontsize;
   line-height: 1.2;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     font-size: 40px;
+
+    &--narrow {
+      max-width: 500px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +60,7 @@
 
 .features__list {
   @include mobile-container;
-  padding-top: 78px;
+  padding-top: 74px;
   padding-bottom: 330px;
   margin-bottom: -43px;
   list-style: none;
