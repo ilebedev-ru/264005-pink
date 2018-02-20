@@ -79,7 +79,7 @@ gulp.task("copy", function () {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "sprite", "html", done);
+  run("clean", "copy", "style", "images", "webp", "sprite", "html", done);
 });
 
 gulp.task("clean", function () {

@@ -1,23 +1,22 @@
 .upload {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 26px;
   color: $dark-blue;
   background-color: $white;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 46px;
+    padding-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-container;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 }
 
 .upload__call {
   margin: 0;
-  margin-bottom: 40px;
   padding: 0 20px;
   font-size: 14px;
   line-height: 30px;
@@ -27,22 +26,19 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-bottom: 69px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
   }
 }
 
 .upload__wrapper {
   @include mobile-container;
+  margin-top: 40px;
   padding-top: 20px;
   background-color: $grey;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     @include tablet-container;
+    margin-top: 69px;
     padding-top: 57px;
     padding-bottom: 55px;
     display: flex;
@@ -52,6 +48,7 @@
     padding-left: 80px;
     padding-right: 60px;
     padding-bottom: 57px;
+    margin-top: 65px;
     margin-bottom: 27px;
   }
 }
